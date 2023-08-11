@@ -1,0 +1,40 @@
+.campsite{
+    background-image: url(../images/campsite-bg.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 60px 0;
+}
+.campsite .section-head h3{
+    font-family: 'impactregular';
+    color: #fff;
+    font-size:40px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.campsite .section-head h3 span{
+    color: #ff1100;   
+}
+
+.campsite .section-head p{
+    font-family: 'Agenor';
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.campsite .campsite-image{
+    text-align: center;
+}
+.campsite .campsite-image a{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background: #ff1100;
+    padding: 12px 50px;
+}
+.campsite .campsite-image img{
+    width: 100%;
+}

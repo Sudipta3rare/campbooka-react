@@ -1,0 +1,64 @@
+.gateway{
+    background: #3b3737;
+    position: relative;
+    padding: 60px 0;
+}
+
+.gateway .section-head h3{
+    font-family: 'impactregular';
+    color: #fff;
+    font-size:40px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 60px;
+}
+
+.gateway .section-head h3 span{
+    color: #ff1100;   
+}
+
+.gateway .gateway-wrap {
+    display: grid;
+    grid-template-columns: 33.333% 33.333% 33.333%;
+    grid-gap: 18px;
+    justify-content: center;
+}
+.gateway .gateway-wrap .gateway-wrap-box{
+    position: relative;
+}
+.gateway .gateway-wrap .gateway-wrap-box .gateway-img-content h3{
+    color: #fff;
+    font-family: 'impactregular';
+    letter-spacing: 1px;
+}
+.gateway .gateway-wrap .gateway-wrap-box .gateway-img-content p{
+    color: #fff;
+}
+.gateway .gateway-wrap .gateway-wrap-box .gateway-img-content {
+    text-align: center;
+    background: #0101018f;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    border-radius: 0 0px 22px 22px;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.gateway .gateway-wrap .gateway-wrap-box:hover .gateway-img-content{
+    opacity: 1;
+}
+
+.gateway .gateway-btn{
+    text-align: center;
+}
+.gateway .gateway-btn a
+{
+    display: inline-block;
+    background: #f10;
+    text-decoration: none;
+    color: #fff;
+    padding: 12px 70px;
+    margin-top: 60px;
+}

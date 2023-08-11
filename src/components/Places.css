@@ -1,0 +1,47 @@
+.places{
+    background: #3b3737;
+    position: relative;
+    padding-bottom: 60px;
+}
+
+.places .section-head h3{
+    font-family: 'impactregular';
+    color: #fff;
+    font-size:40px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 60px;
+}
+
+.places .section-head h3 span{
+    color: #ff1100;   
+}
+
+
+
+.places .places-wrap-sec .places-wrap1 h2, .places .places-wrap-sec .places-wrap2 h2
+{
+    -webkit-text-stroke: 1px #ffffff57;
+    font-size: 150px;
+    font-family: 'impactregular';
+    color: transparent;
+    letter-spacing: 2px;
+}
+.places .places-wrap-sec .places-wrap1 h4, .places .places-wrap-sec .places-wrap2 h4
+{
+    font-family: 'impactregular';
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 40px;
+    line-height: 40px;
+}
+.places .places-wrap-sec .places-wrap1 p, .places .places-wrap-sec .places-wrap2 p
+{
+    color: #fff;
+    margin-top: 40px;
+}
+
+.places .places-wrap-sec .places-wrap2{
+    margin:60px 0;
+}

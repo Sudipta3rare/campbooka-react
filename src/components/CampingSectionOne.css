@@ -1,0 +1,81 @@
+.camping-sec{
+    position: relative;
+    background: #3b3737;
+    padding: 120px 0 60px 0;
+
+}
+
+
+
+.camping-sec .camping-content-box1{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-gap: 10px;
+    align-items: end;
+}
+.camping-sec .camping-content-box1 .camping-content-box1-text p{
+    font-size: 33px;
+    color: #fff;
+    font-family: 'impactregular';
+    line-height: 33px;
+    letter-spacing: 1px;
+    margin-top: 0px;
+    margin-bottom: 150px;
+}
+.camping-sec .camping-content-box1 .camping-content-box1-text h3{
+        font-family: 'impactregular';
+    color: #ffffffa6;
+    font-size: 150px;
+    margin-left: -22rem;
+}
+
+.camping-sec .camping-content-box1 .camping-content-box1-text h3 span{
+    -webkit-text-stroke: 1px white;
+    color: transparent;
+}
+.camping-sec .camping-content-box1 .camping-content-box1-text a{
+    background: #ff1100;
+    display: inline-block;
+    padding: 12px 50px;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+.camping-sec .camping-content-box2{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-gap: 10px;
+    align-items: end;
+    margin-top: 45px;
+}
+.camping-sec .camping-content-box2 .camping-content-box2-text p{
+    font-size: 33px;
+    color: #fff;
+    font-family: 'impactregular';
+    line-height: 33px;
+    letter-spacing: 1px;
+    margin-top: 0px;
+    margin-bottom: 150px;
+}
+.camping-sec .camping-content-box2 .camping-content-box2-text h3{
+        font-family: 'impactregular';
+    color: #ffffffa6;
+    font-size: 150px;
+    margin-right: -22rem;
+    position: relative;
+    z-index: 9;
+}
+
+.camping-sec .camping-content-box2 .camping-content-box2-text h3 span{
+    -webkit-text-stroke: 1px white;
+    color: transparent;
+}
+.camping-sec .camping-content-box2 .camping-content-box2-text a{
+    background: #ff1100;
+    display: inline-block;
+    padding: 12px 50px;
+    color: #fff;
+    text-decoration: none;
+}

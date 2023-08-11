@@ -1,0 +1,48 @@
+.safety{
+    background: #3b3737;
+    padding: 60px 0;
+}
+
+.safety .section-head h3{
+    font-family: 'impactregular';
+    color: #fff;
+    font-size:40px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 60px;
+}
+
+.safety .section-head h3 span{
+    color: #ff1100;   
+}
+
+.safety .safety-wrap .safety-wrap-box{
+    text-align: center;
+}
+.safety .safety-wrap .safety-wrap-box img{
+    width: 50%;
+}
+.safety .safety-wrap .safety-wrap-box h4
+{
+    color: #fff;
+    font-size: 30px;
+    margin-top: 20px;
+}
+.safety .safety-wrap .safety-wrap-box p
+{
+    color: #fff;
+    margin-top: 20px;
+    font-weight: 300;
+}
+
+
+.safety .safety-wrap .safety-wrap-box a
+{
+    display: inline-block;
+    background: #f10;
+    text-decoration: none;
+    color: #fff;
+    padding: 12px 50px;
+    margin-top: 20px;
+}

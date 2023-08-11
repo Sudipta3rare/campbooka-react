@@ -1,0 +1,37 @@
+.plan{
+    background-image: url(../images/plan-bg.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 340px 0;
+}
+.plan .section-head h3{
+    font-family: 'impactregular';
+    color: #fff;
+    font-size:40px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.plan .section-head h3 span{
+    color: #ff1100;   
+}
+
+.plan .section-head p{
+    font-family: 'Agenor';
+    color: #fff;
+    text-align: center;
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+.plan .plan-btn{
+    text-align: center;
+}
+.plan .plan-btn a
+{
+    display: inline-block;
+    background: #f10;
+    text-decoration: none;
+    color: #fff;
+    padding: 12px 50px;
+}

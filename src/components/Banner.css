@@ -1,0 +1,99 @@
+.banner{
+    position: relative;
+    background-image: url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 84rem;
+    width: 100%;
+    top: -150px;
+}
+
+.banner .banner-content{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9;
+    width: 100%;
+}
+.banner:after{
+    position: absolute;
+    content: '';
+    clear: both;
+    top: 50%;
+    left: 50%;
+    background-color: #00000036;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 20%;
+    width: 64%;
+    transform: translate(-50%, -50%);
+}
+
+.banner .banner-content h1{
+    text-align: center;
+    color: #fff;
+    font-family: 'True Lies';
+    font-size: 95px;
+    text-shadow: 4px 8px #00000085;
+}
+.banner .banner-content p{
+    font-family: 'Agenor';
+    font-size: 31px;
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.banner .rd-mailform1{
+    background: #fff;
+    padding: 20px;
+    position: relative;
+    left: 50%;
+    bottom: -10%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    border-radius: 25px;
+    z-index: 1;
+}
+.banner .rd-mailform1 .form-control{
+        border: 0;
+    background: transparent;
+
+}
+.banner .rd-mailform1 .form-control:focus{
+    outline-style: none;
+    box-shadow: none;
+}
+.banner .rd-mailform1 .input-container i{
+    height: 35px;
+    width: 35px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 21px;
+}
+.banner .rd-mailform1 .input-container{
+    border: 1px solid #bbbbbb;
+    border-radius: 12px;
+    height: 50px;
+}
+
+
+.banner .rd-mailform1 .contact_submit_btn{
+        background: #ff1100;
+    border: 0;
+    color: #fff;
+    display: inline-block;
+    padding: 10px 20px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.facebook{
+    position: absolute;
+    top: -7px;
+    right: 33px;
+}

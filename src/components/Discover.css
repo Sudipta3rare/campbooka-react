@@ -1,0 +1,55 @@
+.discover{
+    background: #3b3737;
+    position: relative;
+    padding: 150px 0 150px 0px;
+    background-image: url(../images/hill.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+}
+/*.discover::before{
+    position: absolute;
+    background-image: url(../images/hill.png);
+    top: 0;
+    left: 0;
+    background-size: 100% 100%;
+    height: 100%;
+    width: 100%;
+    content: '';
+    clear: both;
+    background-position: center;
+}*/
+
+.discover .section-head h3{
+    font-family: 'impactregular';
+    color: #fff;
+    font-size:40px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.discover .section-head h3 span{
+    color: #ff1100;   
+}
+
+
+.discover .discover-wrap{
+    margin-top: 60px;
+}
+.discover .discover-wrap .second-row{
+    margin-top: 100px;
+}
+.discover .discover-wrap .discover-box{
+    text-align: center;
+}
+.discover .discover-wrap .discover-box img{
+    width: 90%;
+}
+.discover .discover-wrap .discover-box h4{
+    color: #fff;
+    margin-top: 20px;
+}
+.discover .discover-wrap .discover-box p{
+    color: #fff;
+}

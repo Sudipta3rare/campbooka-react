@@ -1,0 +1,32 @@
+.newtools{
+    background: #3b3737;
+    position: relative;
+    padding: 60px 0;
+}
+.newtools .section-head h3{
+    font-family: 'impactregular';
+    color: #fff;
+    font-size:40px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.newtools .section-head h3 span{
+    color: #ff1100;   
+}
+.newtools .newtools-wrap{
+    margin-top: 60px;
+}
+.newtools .newtools-wrap .newtools-box{
+    text-align: center;
+}
+.newtools .newtools-wrap .newtools-box img{
+    width: 90%;
+}
+.newtools .newtools-wrap .newtools-box h4{
+    color: #fff;
+}
+.newtools .newtools-wrap .newtools-box p{
+    color: #fff;
+}

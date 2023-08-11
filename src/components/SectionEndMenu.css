@@ -1,0 +1,40 @@
+.section-menu{
+    background: #181818;
+    position: relative;
+    padding-bottom: 60px;
+}
+
+.section-menu .section-head h3{
+    font-family: 'impactregular';
+    color: #fff;
+    font-size:40px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 60px;
+}
+.section-menu .section-menu-wrap .section-menu-list{
+    list-style: none;
+    margin-bottom: 50px;
+    padding-left: 0;
+}
+.section-menu .section-menu-wrap .section-menu-list li a
+{
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+.section-menu .section-menu-wrap .section-menu-list li{
+    margin-bottom: 10px;
+}
+.section-menu .section-menu-wrap{
+    border-bottom: 2px solid #878787;
+    padding-top: 60px;
+}
+
+.section-menu .section-menu-wrap.odd{
+    border: none;
+}

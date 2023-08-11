@@ -1,0 +1,49 @@
+.main-form {
+    position: relative;
+    margin-top: -323px;
+    z-index: 9;
+}
+
+.main-form .rd-mailform1 {
+    background: #fff;
+    padding: 20px;
+    width: 100%;
+    border-radius: 25px;
+}
+.main-form .rd-mailform1 .form-group{
+    margin-bottom: 30px;
+}
+.main-form .rd-mailform1 .form-control{
+        border: 0;
+    background: transparent;
+
+}
+.main-form .rd-mailform1 .form-control:focus{
+    outline-style: none;
+    box-shadow: none;
+}
+.main-form .rd-mailform1 .input-container i{
+    height: 35px;
+    width: 35px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 21px;
+}
+.main-form .rd-mailform1 .input-container{
+    border: 1px solid #bbbbbb;
+    border-radius: 12px;
+    height: 50px;
+}
+
+
+.main-form .rd-mailform1 .contact_submit_btn{
+        background: #ff1100;
+    border: 0;
+    color: #fff;
+    display: inline-block;
+    padding: 10px 20px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
