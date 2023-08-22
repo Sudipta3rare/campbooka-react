@@ -1,7 +1,7 @@
 import './AboutBannerPic.css';
-import camp1pic from '../images/camp1.jpg';
-import camp2pic from '../images/camp2.jpg';
-import camp3pic from '../images/camp3.jpg';
+import camp1pic from '../images/camp1.avif';
+import camp2pic from '../images/camp2.avif';
+import camp3pic from '../images/camp3.avif';
 
 function AboutBannerPic() {
     return (

@@ -146,7 +146,7 @@ function Navbar() {
                                 </div>
                             </li>
                             <li className="nav-item dropdown">
-                                <a className="nav-link" href="aboutus.html"> About Us </a>
+                                <a className="nav-link" href="about"> About Us </a>
                             </li>
 
                             <li className="nav-item">
