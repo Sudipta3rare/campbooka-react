@@ -1,4 +1,5 @@
 import './Navbar.css';
+import SiteLogo from '../images/logo.png'
 
 function Navbar() {
     return (
@@ -6,7 +7,7 @@ function Navbar() {
             <div className="container">
                 <nav className="navbar navbar-expand-lg navbar-dark">
                     <a className="navbar-brand">
-                        <img src="./images/logo.png" alt=""/>
+                        <img src={SiteLogo} alt=""/>
                     </a>
                     <button
                         className="navbar-toggler"

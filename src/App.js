@@ -13,11 +13,17 @@ import Gateway from './components/Gateway';
 import SectionEndMenu from './components/SectionEndMenu';
 import Safety from './components/Safety';
 import Footer from './components/Footer';
-
+import About from './components/About';
+import InnerBanner from './components/InnerBanner';
+import AboutInnerHead from './components/AboutInnerHead';
+import AboutBannerPic from './components/AboutBannerPic';
+import AboutMessage from './components/AboutMessage';
+import AboutUsTexts from './components/AboutUsTexts';
+import AboutUstexts2 from './components/AboutUsText2';
 function App() {
   return (
    <>
-      <header>
+      {/* <header>
         <Navbar />
       </header>
       <Banner />
@@ -32,7 +38,14 @@ function App() {
       <Gateway />
       <SectionEndMenu />
       <Safety />
-      <Footer />
+      <Footer /> */}
+      <Navbar></Navbar>
+      <InnerBanner></InnerBanner>
+      <AboutInnerHead></AboutInnerHead>
+      <AboutBannerPic></AboutBannerPic>
+      <AboutMessage></AboutMessage>
+      <AboutUsTexts></AboutUsTexts>
+      <AboutUstexts2></AboutUstexts2>
    </>
   );
 }

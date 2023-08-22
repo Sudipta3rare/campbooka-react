@@ -1,0 +1,22 @@
+.aboutus-text .aboutus-wrap{
+    text-align: center;
+    padding: 30px 0;
+}
+
+.aboutus-text .aboutus-wrap span{
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.aboutus-text .aboutus-wrap p{
+    padding: 20px 0;
+    font-size: 16px;
+    line-height: 35px;
+}
+
+.aboutus-text .aboutus-wrap h3{
+    font-size: 30px;
+    font-weight: 700;
+    color: #a84e0b;
+
+}

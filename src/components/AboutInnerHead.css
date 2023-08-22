@@ -1,0 +1,19 @@
+.find-us .heading-wrap{
+    text-align: center;
+    
+}
+
+
+
+.find-us .heading-wrap h2{
+    font-size: 30px;
+    font-weight: 700;
+    color: #43207a;
+}
+
+.find-us .heading-wrap p{
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 18px 0;
+}
