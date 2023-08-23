@@ -2,11 +2,11 @@ import './AboutUsTexts.css'
 
 function AboutUstexts2() {
     return (
-        <section style={{background: "#d8cde5"}} class="aboutus-text">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="aboutus-wrap">
+        <section style={{background: "#d8cde5"}} className="aboutus-text">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12">
+              <div className="aboutus-wrap">
                 <h3>Mission Statement </h3>
                
                 <p>

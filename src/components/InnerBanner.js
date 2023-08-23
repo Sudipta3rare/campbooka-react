@@ -4,10 +4,10 @@ function InnerBanner() {
     return(
         <section>
          
-        <div class="sub-banner">
-            <div class="overlay">
-                <div class="container">
-                    <div class="breadcrumb-area">
+        <div className="sub-banner">
+            <div className="overlay">
+                <div className="container">
+                    <div className="breadcrumb-area">
                         <h1>About Us</h1>
                         
                     </div>

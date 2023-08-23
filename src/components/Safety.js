@@ -1,14 +1,14 @@
 function Safety() {
     return (
-        <section class="safety">
-      <div class="container">
-        <div class="section-head">
+        <section className="safety">
+      <div className="container">
+        <div className="section-head">
           <h3>Safety at <span>Campbooka</span></h3>
         </div>
-        <div class="safety-wrap">
-          <div class="row">
-            <div class="col-md-4">
-              <div class="safety-wrap-box">
+        <div className="safety-wrap">
+          <div className="row">
+            <div className="col-md-4">
+              <div className="safety-wrap-box">
                 <img src="images/sf1.png" alt="" />
                 <h4>Inclusion Policy</h4>
                 <p>
@@ -18,8 +18,8 @@ function Safety() {
                 <a href="#">Learn More</a>
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="safety-wrap-box">
+            <div className="col-md-4">
+              <div className="safety-wrap-box">
                 <img src="images/sf2.png" alt="" />
                 <h4>Inclusion Policy</h4>
                 <p>
@@ -29,8 +29,8 @@ function Safety() {
                 <a href="#">Learn More</a>
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="safety-wrap-box">
+            <div className="col-md-4">
+              <div className="safety-wrap-box">
                 <img src="images/sf3.png" alt="" />
                 <h4>Inclusion Policy</h4>
                 <p>
