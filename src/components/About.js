@@ -11,7 +11,7 @@ function About() {
     return (
         <>
             <Navbar />
-            <InnerBanner />
+            <InnerBanner data={"About Us"}/>
             <AboutInnerHead />
             <AboutBannerPic />
             <AboutMessage />
