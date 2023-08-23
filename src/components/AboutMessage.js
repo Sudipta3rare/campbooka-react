@@ -2,7 +2,7 @@ import './AboutMessage.css';
 
 function AboutMessage() {
     return (
-        <section style={{background: "#d8cde5"}} class="aboutus-text">
+        <section style={{background: "#d8cde5"}} className="aboutus-text">
         <div className="container">
           <div className="row">
             <div className="col-md-12">

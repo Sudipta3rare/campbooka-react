@@ -2,41 +2,41 @@
 function Modal() {
     return (
         <div
-      class="modal fade"
+      className="modal fade"
       id="exampleModalCenter"
       tabindex="-1"
       role="dialog"
       aria-labelledby="exampleModalCenterTitle"
       aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content login">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLongTitle">
+      <div className="modal-dialog modal-dialog-centered" role="document">
+        <div className="modal-content login">
+          <div className="modal-header">
+            <h5 className="modal-title" id="exampleModalLongTitle">
               Login | Register
             </h5>
             <button
               type="button"
-              class="close"
+              className="close"
               data-dismiss="modal"
               aria-label="Close"
             >
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div class="modal-body">
-            <ul class="nav nav-tabs m-tabs" role="tablist">
-              <li class="nav-item">
+          <div className="modal-body">
+            <ul className="nav nav-tabs m-tabs" role="tablist">
+              <li className="nav-item">
                 <a
-                  class="nav-link active m-btn1"
+                  className="nav-link active m-btn1"
                   data-toggle="tab"
                   href="#tabs-1"
                   role="tab"
                   >Login</a
                 >
               </li>
-              <li class="nav-item">
+              <li className="nav-item">
                 <a
-                  class="nav-link m-btn1"
+                  className="nav-link m-btn1"
                   data-toggle="tab"
                   href="#tabs-2"
                   role="tab"
@@ -44,22 +44,22 @@ function Modal() {
                 >
               </li>
             </ul>
-            <div class="tab-content">
-              <div class="tab-pane active" id="tabs-1" role="tabpanel">
-                <div class="form-sec" id="my_form">
+            <div className="tab-content">
+              <div className="tab-pane active" id="tabs-1" role="tabpanel">
+                <div className="form-sec" id="my_form">
                   <form
-                    class="rd-mailform1"
+                    className="rd-mailform1"
                     name="loginform"
                     id="loginform"
                     action=""
                     method="post"
                   >
-                    <div class="row">
-                      <div class="col-md-12">
-                        <div class="form-group">
+                    <div className="row">
+                      <div className="col-md-12">
+                        <div className="form-group">
                           <input
                             type="text"
-                            class="form-control"
+                            className="form-control"
                             id="user_login"
                             size="20"
                             value=""
@@ -68,10 +68,10 @@ function Modal() {
                           />
                         </div>
                       </div>
-                      <div class="col-md-12">
-                        <div class="form-group">
+                      <div className="col-md-12">
+                        <div className="form-group">
                           <input
-                            class="form-control"
+                            className="form-control"
                             id="user_pass"
                             type="password"
                             size="20"
@@ -82,11 +82,11 @@ function Modal() {
                         </div>
                       </div>
                     </div>
-                    <div class="text-left m-login">
+                    <div className="text-left m-login">
                       <a
                         href="camp-DashBoard.html"
                         type="submit"
-                        class="contact_submit_btn m-btn1 btn btn-primary"
+                        className="contact_submit_btn m-btn1 btn btn-primary"
                         >Login</a
                       >
                       <input type="hidden" value="" name="redirect_to" />
@@ -95,15 +95,15 @@ function Modal() {
                   </form>
                 </div>
               </div>
-              <div class="tab-pane" id="tabs-2" role="tabpanel">
-                <div class="form-sec" id="my_form">
-                  <form class="rd-mailform1 reg_frm" method="post">
-                    <div class="row">
-                      <div class="col-md-12">
-                        <div class="form-group">
+              <div className="tab-pane" id="tabs-2" role="tabpanel">
+                <div className="form-sec" id="my_form">
+                  <form className="rd-mailform1 reg_frm" method="post">
+                    <div className="row">
+                      <div className="col-md-12">
+                        <div className="form-group">
                           <input
                             type="text"
-                            class="form-control reg_name"
+                            className="form-control reg_name"
                             id="rg_name"
                             name="name"
                             required
@@ -111,11 +111,11 @@ function Modal() {
                           />
                         </div>
                       </div>
-                      <div class="col-md-12">
-                        <div class="form-group">
+                      <div className="col-md-12">
+                        <div className="form-group">
                           <input
                             type="text"
-                            class="form-control reg_email"
+                            className="form-control reg_email"
                             id="rg_email"
                             name="email"
                             required
@@ -123,48 +123,48 @@ function Modal() {
                           />
                         </div>
                       </div>
-                      <div class="col-md-12">
-                        <div class="form-group">
+                      <div className="col-md-12">
+                        <div className="form-group">
                           <input
                             type="text"
-                            class="form-control reg_ph"
+                            className="form-control reg_ph"
                             required
                             placeholder="Contact Number"
                           />
                         </div>
                       </div>
 
-                      <div class="col-md-12">
-                        <div class="form-group">
+                      <div className="col-md-12">
+                        <div className="form-group">
                           <input
                             type="text"
-                            class="form-control reg_pass"
+                            className="form-control reg_pass"
                             required
                             placeholder="*Password"
                           />
                         </div>
                       </div>
-                      <div class="col-md-12">
-                        <div class="form-group">
+                      <div className="col-md-12">
+                        <div className="form-group">
                           <input
                             type="text"
-                            class="form-control reg_c_pass"
+                            className="form-control reg_c_pass"
                             required
                             placeholder="*Confirm Password"
                           />
                         </div>
                       </div>
                     </div>
-                    <div class="text-left m-login">
+                    <div className="text-left m-login">
                       <button
-                        class="contact_submit_btn m-btn1 btn btn-primary"
+                        className="contact_submit_btn m-btn1 btn btn-primary"
                         type="submit"
                       >
                         Register
                       </button>
                     </div>
                   </form>
-                  <span class="my-reg" style="color: green"></span>
+                  <span className="my-reg" style="color: green"></span>
                 </div>
               </div>
             </div>
