@@ -1,0 +1,23 @@
+.cont-wrap{
+    background:#dcd4ed;
+    padding: 20px;
+    position: relative;
+    box-shadow:6px 7px 12px 4px #433756eb;
+}
+
+.cont .cont-wrap::after{
+    position: absolute;
+    clear: both;
+    content: '';
+    background: #433756;
+    height: 100%;
+    width: 50%;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.cont .contact-details {
+  position: relative;
+  z-index: 9;
+}

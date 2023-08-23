@@ -1,6 +1,6 @@
 import './InnerBanner.css';
 
-function InnerBanner() {
+function InnerBanner(props) {
     return(
         <section>
          
@@ -8,7 +8,7 @@ function InnerBanner() {
             <div className="overlay">
                 <div className="container">
                     <div className="breadcrumb-area">
-                        <h1>About Us</h1>
+                        <h1>{props.data}</h1>
                         
                     </div>
                 </div>

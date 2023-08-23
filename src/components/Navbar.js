@@ -150,7 +150,7 @@ function Navbar() {
                             </li>
 
                             <li className="nav-item">
-                                <a className="nav-link" href="contactus.html">Contact</a>
+                                <a className="nav-link" href="contact">Contact</a>
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link" href="hostlanding.html">Become a Host</a>
