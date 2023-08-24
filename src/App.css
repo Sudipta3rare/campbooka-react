@@ -36,3 +36,113 @@
     transform: rotate(360deg);
   }
 }
+
+
+/* @font-face {
+  font-family: 'Poppins';
+  src: url('src/fonts/Poppins-Medium.woff2') format('woff2'),
+      url('src/fonts/Poppins-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('src/fonts/Poppins-Regular.woff2') format('woff2'),
+      url('src/fonts/Poppins-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('src/fonts/Poppins-Light.woff2') format('woff2'),
+      url('src/fonts/Poppins-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Agenor';
+  src: url('src/fonts/Agenor-Black.eot');
+  src: local('src/fonts/Agenor Black'), local('Agenor-Black'),
+      url('src/fonts/Agenor-Black.woff2') format('woff2'),
+      url('src/fonts/Agenor-Black.woff') format('woff'),
+      url('src/fonts/Agenor-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Agenor';
+  src: url('src/fonts/Agenor.woff2') format('woff2'),
+      url('src/fonts/Agenor.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Local Goods Outline';
+  src: url('src/fonts/LocalGoodsOutline.woff2') format('woff2'),
+      url('src/fonts/LocalGoodsOutline.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Local Goods Outline';
+  src: url('src/fonts/LocalGoodsOutline.woff2') format('woff2'),
+      url('src/fonts/LocalGoodsOutline.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'True Lies';
+  src: url('src/fonts/TrueLies.woff2') format('woff2'),
+      url('src/fonts/TrueLies.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'impactregular';
+  src: url('src/fonts/unicode.impact-webfont.woff2') format('woff2'),
+       url('src/fonts/unicode.impact-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+} */
+
+body {
+background:#fff;
+font-family: 'Poppins', sans-serif;
+}
+img{
+  max-width: 100%;
+}
+.section-padding{
+padding: 3rem 0rem;
+}
+.section-heading p{
+line-height: 1px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #000;
+}
+.section-heading h3{
+font-weight: 600;
+font-size: 3rem;
+}
+.section-heading h3 span{
+color: #127532;
+} 
+
+.section-padding .text-content{
+font-size: 12px;
+line-height: 14px;
+color: #000;
+}
