@@ -47,3 +47,18 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+.rs-input {
+    width: 482% !important;
+}
+
+.rs-auto-complete {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px #ccc;
+}
+
+.rs-anim-fade{
+    position: absolute !important;
+    z-index: 99999 !important;
+}
