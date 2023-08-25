@@ -36,8 +36,8 @@ function MainForm() {
                     <div className="row">
                         <div className="col-md-12">
                             <div className="form-group">
-                                <div /*className="dropdown-content input-container"*/>
-                                    <AutoComplete data={data} style={{ width: 224 }} onSelect={handleSelect} />
+                                <div className="dropdown-content input-container">
+                                    <AutoComplete data={data} onSelect={handleSelect} />
                                 </div>
                                 
                             </div>

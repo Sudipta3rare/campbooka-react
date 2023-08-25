@@ -54,11 +54,56 @@
 
 .rs-auto-complete {
     border-radius: 5px;
-    border: 1px solid #ccc;
-    box-shadow: 0 0 5px #ccc;
 }
 
 .rs-anim-fade{
     position: absolute !important;
     z-index: 99999 !important;
+    width: 400px;
+}
+
+
+.rd-mailform1 .rs-auto-complete{
+    width: 100%;
+}
+
+.rd-mailform1 .rs-auto-complete input{
+    width: 100%!important;
+    height: 47px;
+    border-radius: 12px;
+    border: none;
+}
+.rd-mailform1 .rs-auto-complete input:focus{
+    outline: none;
+}
+.rd-mailform1 .rs-picker-default .rs-picker-toggle.rs-btn{
+    height: 100%;
+    border: none;
+}
+.rd-mailform1 .rs-picker-default:not(.rs-picker-disabled) .rs-btn-active, .rs-picker-default:not(.rs-picker-disabled) .rs-btn:focus, .rs-picker-default:not(.rs-picker-disabled) .rs-btn:hover, .rs-picker-default:not(.rs-picker-disabled) .rs-picker-toggle-active, .rs-picker-default:not(.rs-picker-disabled) .rs-picker-toggle:focus, .rs-picker-default:not(.rs-picker-disabled) .rs-picker-toggle:hover{
+   border: none!important;
+}
+.rd-mailform1 .rs-dropdown-toggle, .rs-dropdown-toggle.rs-btn{
+    background: #fff;
+    border-radius: 12px;
+    height: 47px;
+    width: 100%;
+}
+rd-mailform1 .rs-dropdown-toggle, .rs-dropdown-toggle.rs-btn:hover{
+    background-color: #fff;
+    border: none;
+}
+.rd-mailform1 .rs-dropdown .rs-btn>.rs-dropdown-toggle-caret{
+    display: none;
+}
+.rd-mailform1 .rs-dropdown{
+    width: 100%;
+}
+.rd-mailform1 .rs-dropdown .rs-dropdown-menu{
+    width: 100%;
+    text-align: center;
+}
+.rd-mailform1 .rs-dropdown-toggle, .rs-dropdown-toggle.rs-btn{
+    outline: none;
+    background-color: #fff;
 }
