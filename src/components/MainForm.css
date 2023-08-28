@@ -89,7 +89,7 @@
     height: 47px;
     width: 100%;
 }
-rd-mailform1 .rs-dropdown-toggle, .rs-dropdown-toggle.rs-btn:hover{
+.rd-mailform1 .rs-dropdown-toggle, .rs-dropdown-toggle.rs-btn:hover{
     background-color: #fff;
     border: none;
 }
@@ -107,3 +107,5 @@ rd-mailform1 .rs-dropdown-toggle, .rs-dropdown-toggle.rs-btn:hover{
     outline: none;
     background-color: #fff;
 }
+
+iframe#webpack-dev-server-client-overlay{display:none!important}
