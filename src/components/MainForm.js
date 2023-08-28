@@ -64,7 +64,7 @@ function MainForm() {
                         </div>
                     </div>
                     <div className="text-center">
-                        <a id="submit_btn" href="campersearch.html" className="contact_submit_btn" type="submit">Submit</a>
+                        <a id="submit_btn" href="campersearch" className="contact_submit_btn" type="submit">Submit</a>
                     </div>
                 </form>
             </div>
