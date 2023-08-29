@@ -3,7 +3,7 @@ import './MainForm.css';
 import { AutoComplete, DateRangePicker, Dropdown } from 'rsuite';
 import 'rsuite/dist/rsuite.min.css';
 import { API_BASE_URL } from '../configuration/Constants';
-import { SearchLocationResponseModel } from '../model/ResponseModels';
+import { useNavigate } from 'react-router-dom';
 
 function MainForm() {
     const requestOptions = {
@@ -14,16 +14,19 @@ function MainForm() {
     const [childrenCount, setChildrenCount] = useState(0);
     const [dateRange, setDateRange] = useState({ startDate: null, endDate: null });
     const [data, setData] = useState([]);
+    const [placeId, setPlaceId] = useState(0);
+
+    const navigate = useNavigate();
 
     const handleSearchChange = async (value) => {
         if(value) {
             const response = await fetch(API_BASE_URL + "/api/searchLocation/" + value, requestOptions);
             const responseData = await response.json();
-            console.log(responseData);
-            setData(responseData.map(d => d.locationName + ", " + d.countryName));
+            setData(responseData);
         }
     }
 
+    const onSelectHandler = () => setPlaceId(data[0].id);
     const incrAdultCount = () => setAdultCount(adultCount + 1);
     const decrAdultCount = () => setAdultCount(adultCount === 0 ? 0 : adultCount - 1);
     const incrChildrenCount = () => setChildrenCount(childrenCount + 1);
@@ -35,6 +38,17 @@ function MainForm() {
         // setDateRange is async func. 
     }
 
+    const onClickButtonHandler = () => {
+        navigate("/campersearch", {
+            state: {
+                id: placeId,  
+                adCount: adultCount, 
+                chCount: childrenCount,
+                dtRange: dateRange
+            }
+        })
+    }
+
     return (
         <section className="main-form">
             <div className="container">
@@ -43,7 +57,12 @@ function MainForm() {
                         <div className="col-md-12">
                             <div className="form-group">
                                 <div className="dropdown-content input-container">
-                                    <AutoComplete data={data} onChange={handleSearchChange} placeholder='Search Destination' />
+                                    <AutoComplete 
+                                        data={data.map(d => d.locationName + ", " + d.countryName)} 
+                                        onChange={handleSearchChange} 
+                                        placeholder='Search Destination' 
+                                        onSelect={onSelectHandler}
+                                    />
                                 </div>
                                 
                             </div>
@@ -80,7 +99,7 @@ function MainForm() {
                         </div>
                     </div>
                     <div className="text-center">
-                        <a id="submit_btn" href="campersearch" className="contact_submit_btn" type="submit">Submit</a>
+                        <a id="submit_btn" onClick={onClickButtonHandler} className="contact_submit_btn" type="submit">Submit</a>
                     </div>
                 </form>
             </div>

@@ -10,11 +10,11 @@ function PlacesSection(props) {
         method: "POST", 
         headers: { "Content-Type": "application/json"}, 
         body: JSON.stringify({
-            placeId : 1,
-            fromDate : "01-08-2023",
-            toDate : "03-08-2023",
-            noOfAdults : 3,
-            noOfChildren : 1
+            placeId : props.guestDetails.id,
+            fromDate : props.guestDetails.dtRange[0],
+            toDate : props.guestDetails.dtRange[1],
+            noOfAdults : props.guestDetails.adCount,
+            noOfChildren : props.guestDetails.chCount
         })
     };
 
