@@ -1,21 +1,21 @@
 import './PlaceCard.css';
 import place1 from '../images/place1.png';
 
-function PlaceCard() {
+function PlaceCard(props) {
     return (
-        <div class="card border-dlt">
-            <div class="card-image">
-                <figure class="image is-4by3">
+        <div className="card border-dlt">
+            <div className="card-image">
+                <figure className="image is-4by3">
                     <a href="camperbook.html">
                         <img src={place1} alt=""/>
                     </a>
                 </figure>
             </div>
-            <div class="card-content">
-                <div class="contents">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris. <a href="#">@bulmaio</a>. <a href="#">#css</a> <a href="#">#responsive</a>
+            <div className="card-content">
+                <div className="contents">
+                    {props.description}
                     <br/>
-                    <small>11:09 PM - 1 Jan 2016</small>
+                    <small>{props.acres}</small>
                 </div>
             </div>
         </div>

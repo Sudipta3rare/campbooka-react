@@ -8,12 +8,7 @@ function CamperSearch() {
     return (
         <>
             <Navbar />
-            <PlacesSection>
-                <PlaceCard />
-                <PlaceCard />
-                <PlaceCard />
-                <PlaceCard />
-            </PlacesSection>
+            <PlacesSection />
             <SafetyPartnerSection />
             <Footer />
         </>
