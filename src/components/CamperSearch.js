@@ -3,12 +3,16 @@ import PlacesSection from './PlacesSection';
 import PlaceCard from './PlaceCard';
 import SafetyPartnerSection from './SafetyPartnerSection';
 import Footer from './Footer';
+import { useLocation } from 'react-router-dom';
 
 function CamperSearch() {
+
+    const location = useLocation();
+
     return (
         <>
             <Navbar />
-            <PlacesSection />
+            <PlacesSection guestDetails={location.state} />
             <SafetyPartnerSection />
             <Footer />
         </>
