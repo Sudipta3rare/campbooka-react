@@ -2,9 +2,9 @@ import './HostAboutRight.css';
 
 function HostAboutRight() {
     return (
-        <div class="col-md-5">
-              <div class="insurence ">
-                <h5 class="border-1">
+        <div className="col-md-5">
+              <div className="insurence ">
+                <h5 className="border-1">
                   $100000 insurance <br/> policy provided
                 </h5>
                 <p>

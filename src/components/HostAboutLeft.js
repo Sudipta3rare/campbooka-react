@@ -2,7 +2,7 @@ import './HostAboutLeft.css';
 
 function HostAboutLeft() {
     return (
-        <div class="col-md-7">
+        <div className="col-md-7">
               <div className="section-1">
                 <h5 >What is Campbooka ?</h5>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus minima qui placeat fugiat nisi error libero odio ipsam ut quod repudiandae natus, laudantium nihil aliquam voluptatum illo dolorum dignissimos ad.</p>

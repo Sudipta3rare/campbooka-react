@@ -27,11 +27,15 @@ function PlacesSection(props) {
         getDataFromBackend();
     }, []);
 
+    function abc() {
+
+    }
+
     return (
         <div className="container-list container">
             <div className="columns">
                 <div className="column" >
-                   {data.map( d => (<PlaceCard key={d.placeName} acres={d.acres} description={d.description}/>) )}
+                   {data.map( (d) => (<PlaceCard key={d.placeName} acres={d.acres} description={d.description}/>) )}
                 </div>
             </div>
         </div>
