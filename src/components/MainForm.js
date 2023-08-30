@@ -46,7 +46,7 @@ function MainForm() {
                 chCount: childrenCount,
                 dtRange: dateRange
             }
-        })
+        });
     }
 
     return (

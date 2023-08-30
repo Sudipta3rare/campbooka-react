@@ -1,5 +1,5 @@
 
-function PlaceDescriptionSection() {
+function PlaceDescriptionSection(props) {
     return (
         <div className="container">
             <div className="row">
@@ -7,13 +7,13 @@ function PlaceDescriptionSection() {
                     <div className="sites-wrap d-flex">
                         <div className="sites">
                             <p>
-                                95 acres
-                                <span className="d-block"> 8 sites</span>
+                                {props.acres} acres
+                                <span className="d-block">sites</span>
                             </p>
                         </div>
                     </div>
                     <p className="property-des1">
-                        95 acres on the beautiful Topisaw Creek. Here we've raised 5 kids and a multitude of dogs, cats and chickens and a small herd of pineywoods cattle. The woods are quiet and undisturbed , harboring native species like jack in the pulpit, trillium and Florida anise. The spring-fed (and thus always refreshing!) Topisaw Creek forms the eastern border of our property, so plan to spend
+                        {props.description}
                     </p>
                 </div>
                 <div className="col-md-5">
