@@ -5,6 +5,8 @@ import Home from './components/Home';
 import Contact from './components/Contact';
 import Host from './components/Host';
 import CamperSearch from './components/CamperSearch';
+import Checkout from './components/Checkout';
+import Checkout2Page from './components/Checkout2Page';
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
       <Route path="contact" element={<Contact/>}/>
       <Route path="host" element={<Host/>}/>
       <Route path='campersearch' element={<CamperSearch />} />
+      <Route path='checkoutrule' element={<Checkout />} />
+      <Route path='checkout2' element={<Checkout2Page/>} />
     </Routes>
    </>
   );
