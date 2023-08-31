@@ -35,7 +35,7 @@ function PlacesSection(props) {
         <div className="container-list container">
             <div className="columns">
                 <div className="column" >
-                   {data.map( (d) => (<PlaceCard key={d.id} placeName = {d.placeName} acres={d.acres} description={d.description}/>) )}
+                   {data.map( (d) => (<PlaceCard key={d.id} placeId={d.id} placeName = {d.placeName} acres={d.acres} description={d.description}/>) )}
                 </div>
             </div>
         </div>

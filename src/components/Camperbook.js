@@ -11,6 +11,7 @@ function Camperbook() {
 
     const location = useLocation();
     const placeData = location.state;
+    console.log(placeData);
 
 
     return (
@@ -21,7 +22,7 @@ function Camperbook() {
             <PlaceDetailSection  placeName={placeData.placeName} />
             <PlaceImageSection />
             <PlaceDescriptionSection acres={placeData.acres} description={placeData.description} />
-            <PropertyCardSection />
+            <PropertyCardSection placeId={placeData.placeId}/>
             <PlaceHostDetailsSection/>
             <ThingsToDoSection />
         </>
