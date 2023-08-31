@@ -7,9 +7,6 @@ function ThingsToDoSection() {
             <div className="more-like">
                 <div className="owl-carousel owl-theme" id="similar-products">
                     <div className="item">
-            <div className="more-like">
-                <div className="owl-carousel owl-theme" id="similar-products">
-                    <div className="item">
                         <ul>
                             <li>
                                 <a href="#" className="product-img">
@@ -20,55 +17,6 @@ function ThingsToDoSection() {
                             </li>
                         </ul>
                     </div>
-                    <div className="item">
-                    <div className="item">
-                        <ul>
-                            <li>
-                                <a href="#" className="product-img">
-                                    <img src={g1} alt="owl1" />
-                                    <span>Lorem ipsum dolor sit amet consectetur </span>
-                                    <span> $ 798</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div className="item">
-                    <div className="item">
-                        <ul>
-                            <li>
-                                <a href="#" className="product-img">
-                                    <img src={g1} alt="owl1" />
-                                    <span>Lorem ipsum dolor sit amet consectetur </span>
-                                    <span> $ 798</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div className="item">
-                    <div className="item">
-                        <ul>
-                            <li>
-                                <a href="#" className="product-img">
-                                    <img src={g1} alt="owl1" />
-                                    <span>Lorem ipsum dolor sit amet consectetur </span>
-                                    <span> $ 798</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div className="item">
-                    <div className="item">
-                        <ul>
-                            <li>
-                                <a href="#" className="product-img">
-                                    <img src={g1} alt="owl1" />
-                                    <span>Lorem ipsum dolor sit amet consectetur </span>
-                                    <span> $ 798</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div className="item">
                     <div className="item">
                         <ul>
                             <li>
@@ -103,22 +51,70 @@ function ThingsToDoSection() {
                         </ul>
                     </div>
                     <div className="item">
-                    <div className="item">
-                        <ul>
-                            <li>
-                                <a href="#" className="product-img">
-                                    <img src={g1} alt="owl1" />
-                                    <span>Lorem ipsum dolor sit amet consectetur </span>
-                                    <span> $ 798</span>
-                                </a>
-                            </li>
-                        </ul>
+                        <div className="item">
+                            <ul>
+                                <li>
+                                    <a href="#" className="product-img">
+                                        <img src={g1} alt="owl1" />
+                                        <span>Lorem ipsum dolor sit amet consectetur </span>
+                                        <span> $ 798</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div className="item">
+                            <div className="item">
+                                <ul>
+                                    <li>
+                                        <a href="#" className="product-img">
+                                            <img src={g1} alt="owl1" />
+                                            <span>Lorem ipsum dolor sit amet consectetur </span>
+                                            <span> $ 798</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div className="item">
+                                <ul>
+                                    <li>
+                                        <a href="#" className="product-img">
+                                            <img src={g1} alt="owl1" />
+                                            <span>Lorem ipsum dolor sit amet consectetur </span>
+                                            <span> $ 798</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div className="item">
+                                <ul>
+                                    <li>
+                                        <a href="#" className="product-img">
+                                            <img src={g1} alt="owl1" />
+                                            <span>Lorem ipsum dolor sit amet consectetur </span>
+                                            <span> $ 798</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div className="item">
+                                <div className="item">
+                                    <ul>
+                                        <li>
+                                            <a href="#" className="product-img">
+                                                <img src={g1} alt="owl1" />
+                                                <span>Lorem ipsum dolor sit amet consectetur </span>
+                                                <span> $ 798</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-
     );
 }
 
-export default ThingsToDoSection;
+                    export default ThingsToDoSection;
