@@ -1,10 +1,12 @@
 import PropertyCard from "./PropertyCard";
+import './PropertyCardSection.css';
 
 function PropertyCardSection() {
     return (
-        <div class="container">
-            <div class="viewproperty-wrap">
-                <div class="row">
+        <section className="viewpropert">
+            <div className="container">
+            <div className="viewproperty-wrap">
+                <div className="row">
                     <PropertyCard />
                     <PropertyCard />
                     <PropertyCard />
@@ -12,6 +14,7 @@ function PropertyCardSection() {
                 </div>
             </div>
         </div>
+        </section>
     );
 }
 

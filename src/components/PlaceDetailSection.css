@@ -1,0 +1,22 @@
+.Property-title{
+    color: #000;
+}
+
+.all-btns a{
+    background-color: #903131;
+    border: none;
+    color: white !important;
+    padding: 10px 19px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    border-radius: 15px;
+    text-decoration: none;
+    margin-right: 10px;
+    
+}
+
+.btn-gr{
+    margin-top: 20px;
+}

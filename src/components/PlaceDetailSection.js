@@ -1,3 +1,4 @@
+import './PlaceDetailSection.css';
 function PlaceDetailSection() {
     return (
         <div className="container" style={{margintop: "20px"}}>

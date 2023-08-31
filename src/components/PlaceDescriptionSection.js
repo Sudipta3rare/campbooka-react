@@ -1,4 +1,4 @@
-
+import './PlaceDescriptionSection.css';
 function PlaceDescriptionSection() {
     return (
         <div className="container">
