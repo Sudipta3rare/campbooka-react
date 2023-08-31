@@ -1,3 +1,4 @@
+import { useLocation } from "react-router-dom";
 import CamperNavbar from "./CamperNavbar";
 import PlaceDescriptionSection from "./PlaceDescriptionSection";
 import PlaceDetailSection from "./PlaceDetailSection";
@@ -7,15 +8,21 @@ import PropertyCardSection from "./PropertyCardSection";
 import ThingsToDoSection from "./ThingsToDoSection";
 
 function Camperbook() {
+
+    const location = useLocation();
+    const placeData = location.state;
+    console.log(placeData);
+
+
     return (
         <>
             <header>
                 <CamperNavbar />
             </header>
-            <PlaceDetailSection  />
+            <PlaceDetailSection  placeName={placeData.placeName} />
             <PlaceImageSection />
-            <PlaceDescriptionSection />
-            <PropertyCardSection />
+            <PlaceDescriptionSection acres={placeData.acres} description={placeData.description} />
+            <PropertyCardSection placeId={placeData.placeId}/>
             <PlaceHostDetailsSection/>
             <ThingsToDoSection />
         </>

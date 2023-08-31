@@ -26,7 +26,7 @@ function MainForm() {
         }
     }
 
-    const onSelectHandler = () => setPlaceId(data[0].id);
+    const onSelectHandler = (value) => setPlaceId( data.find(d => (d.locationName + ", " + d.countryName) === value).id );
     const incrAdultCount = () => setAdultCount(adultCount + 1);
     const decrAdultCount = () => setAdultCount(adultCount === 0 ? 0 : adultCount - 1);
     const incrChildrenCount = () => setChildrenCount(childrenCount + 1);
@@ -46,7 +46,7 @@ function MainForm() {
                 chCount: childrenCount,
                 dtRange: dateRange
             }
-        })
+        });
     }
 
     return (
