@@ -14,26 +14,26 @@ import Footer from './Footer';
 import Plan from './Plan';
 
 function Home() {
-    return (
-      <>
-        <header>
-            <Navbar />
-        </header>
-        <Banner />
-        <MainForm />
-        <CampingSectionOne />
-        <CampingSectionTwo />
-        <Campsite />
-        <NewTools />
-        <Discover />
-        <Places />
-        <Plan />
-        <Gateway />
-        <SectionEndMenu />
-        <Safety />
-        <Footer />
-      </>
-    );
+  return (
+    <>
+      <header>
+        <Navbar />
+      </header>
+      <Banner />
+      <MainForm />
+      <CampingSectionOne />
+      <CampingSectionTwo />
+      <Campsite />
+      <NewTools />
+      <Discover />
+      <Places />
+      <Plan />
+      <Gateway />
+      <SectionEndMenu />
+      <Safety />
+      <Footer />
+    </>
+  );
 }
 
 export default Home;

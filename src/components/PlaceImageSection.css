@@ -1,0 +1,14 @@
+.view-all-bts{
+    background-color: #903131;
+    border: none;
+    color: white !important;
+    padding: 10px 19px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    border-radius: 15px;
+    position: absolute;
+    left: 165px;
+    bottom: 10px;
+}

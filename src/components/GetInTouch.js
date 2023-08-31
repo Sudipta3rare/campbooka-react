@@ -3,41 +3,41 @@ import './GetInTouch.css'
 function GetInTouch() {
     return(
         
-        <div class="col-lg-6">
-             <div class="contact-wrap">
+        <div className="col-lg-6">
+             <div className="contact-wrap">
   
-              <h3 class="send-header">Send us a Message   <i style={{fontsize: "30px" }} class="fa fa-envelope-open" aria-hidden="true"></i> </h3>
+              <h3 className="send-header">Send us a Message   <i style={{fontsize: "30px" }} className="fa fa-envelope-open" aria-hidden="true"></i> </h3>
               
               <form id="contact_form" action="">
-                  <div class="row">
-                      <div class="col-md-6">
-                          <div class="form-group name">
-                              <input type="text" name="name" class="form-control" placeholder="Name" aria-label="Full Name"/>
+                  <div className="row">
+                      <div className="col-md-6">
+                          <div className="form-group name">
+                              <input type="text" name="name" className="form-control" placeholder="Name" aria-label="Full Name"/>
                           </div>
                       </div>
-                      <div class="col-md-6">
-                          <div class="form-group email">
-                              <input type="email" name="email" class="form-control" placeholder="Email Address" aria-label="Email Address"/>
+                      <div className="col-md-6">
+                          <div className="form-group email">
+                              <input type="email" name="email" className="form-control" placeholder="Email Address" aria-label="Email Address"/>
                           </div>
                       </div>
-                      <div class="col-md-6">
-                          <div class="form-group subject">
-                              <input type="text" name="subject" class="form-control" placeholder="Subject" aria-label="Subject"/>
+                      <div className="col-md-6">
+                          <div className="form-group subject">
+                              <input type="text" name="subject" className="form-control" placeholder="Subject" aria-label="Subject"/>
                           </div>
                       </div>
-                      <div class="col-md-6">
-                          <div class="form-group number">
-                              <input type="text" name="phone" class="form-control" placeholder="Phone" aria-label="Phone Number"/>
+                      <div className="col-md-6">
+                          <div className="form-group number">
+                              <input type="text" name="phone" className="form-control" placeholder="Phone" aria-label="Phone Number"/>
                           </div>
                       </div>
-                      <div class="col-md-12">
-                          <div class="form-group message">
-                              <textarea  class="form-control" rows="4" name="message" placeholder="Write message" aria-label="Write message"></textarea>
+                      <div className="col-md-12">
+                          <div className="form-group message">
+                              <textarea  className="form-control" rows="4" name="message" placeholder="Write message" aria-label="Write message"></textarea>
                           </div>
                       </div>
-                      <div class="col-md-12">
-                          <div class="text-center">
-                            <a href="#" class="form-control" id="sub">Submit</a>
+                      <div className="col-md-12">
+                          <div className="text-center">
+                            <a href="#" className="form-control" id="sub">Submit</a>
                           </div>
                       </div>
                   </div>

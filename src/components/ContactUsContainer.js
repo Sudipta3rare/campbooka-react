@@ -1,10 +1,10 @@
 function ContactUsContainer (props) {
 
     return(
-        <section class="cont" id="cont">
-      <div class="container">
-        <div class="cont-wrap">
-          <div class="row align-items-center">
+        <section className="cont" id="cont">
+      <div className="container">
+        <div className="cont-wrap">
+          <div className="row align-items-center">
             {props.children}
           </div>
           </div>

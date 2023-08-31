@@ -4218,7 +4218,7 @@ height: 50%;
 
 /*  properties-list card  */
 
-.columns {
+.column {
     grid-template-columns: 25% 25% 25% 25%;
     display: grid;
     column-gap: 20px;

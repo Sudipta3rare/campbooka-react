@@ -1,0 +1,52 @@
+.sites-wrap .sites p{
+    font-size: 22px;
+    font-weight: 500;
+    margin-right: 20px;
+ }
+ 
+ 
+ 
+.sites-wrap .sites span{
+     font-size: 20px;
+     font-weight: normal;
+ }
+ 
+ .sites-wrap .tent img{
+     width: 16%;
+ }
+ 
+ .tent{
+     margin-left: 30px;
+ }
+ 
+ .tent p{
+     margin-top: 10px;
+ }
+ 
+ .property-des1{
+     margin-top: 20px;
+ }
+ 
+ .facilites-list{
+     padding: 40px 0;
+ }
+ 
+ .facilites-list li{
+     margin-bottom: 10px;
+     
+ }
+ .facilites-list li i
+ {
+    color: #000;
+    font-size: 15px;
+    margin-right: 5px;
+}
+ 
+ .facilites-list ul{
+     list-style: none;
+ }
+ 
+ .facilites-list h5{
+     margin-left: 40px;
+     margin-bottom: 20px;
+ }
