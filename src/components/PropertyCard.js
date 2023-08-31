@@ -1,7 +1,18 @@
 import './PropertyCard.css';
 import g1 from '../images/g1.png';
 
-function PropertyCard() {
+function PropertyCard(props) {
+
+    let reviewCat = '';
+    if(props.likePercentage > 85)
+      reviewCat = 'Excellent';
+    if(props.likePercentage > 65)
+      reviewCat = 'Good';
+    if(props.likePercentage >= 40)
+      reviewCat = 'Moderate';
+    if(props.likePercentage < 40)
+      reviewCat = 'Needs Improvement';
+
     return (
         <div className="col-md-12" style={{padding: "25px"}}>
             <div className="viewproperty-wrap-box">
@@ -13,11 +24,10 @@ function PropertyCard() {
                 </div>
                 <div className="col-md-7">
                   <div className="des-wrap">
-                    <h6>Property name : <span>Baskervilles </span></h6>
-                    <p className="t1">Property Type : <span>Tiny Cottage</span> </p>
-                    <p className="t2">Area: <span> 400 sq-ft</span></p>
-                    <p className="t3">Description :<span> Entire studio • 1 bathroom • 21m² 1 full
-                        bed</span><br/><span>Studio Apartment with Air conditioning</span></p>
+                    <h6>Property name : <span>{props.propertyName}</span></h6>
+                    <p className="t1">Property Type : <span>{props.accomodationType}</span> </p>
+                    <p className="t2">Area: <span> {props.area} sq-ft</span></p>
+                    <p className="t3">Description :<span>{props.description}</span><br/><span>Studio Apartment with Air conditioning</span></p>
                     <p className="t4">Location: <span> Kolkata</span></p>
                     <span className="siTaxiOp">Free airport taxi</span>
                   </div>
@@ -25,9 +35,9 @@ function PropertyCard() {
                 <div className="col-md-2">
                   <div className="update-wrap">
                     <div className="siDetails">
-                      <div className="siRating"><span>Excellent</span><button>8.9</button></div>
-                      <div className="siDetailTexts"><span className="siPrice">$112</span><span className="siTaxOp">Includes taxes
-                          and fees</span><a href="checkoutrule.html" className="btn btn-primary btn-sm ">Reserve</a></div>
+                      <div className="siRating"><span>{reviewCat}</span><button>{props.likePercentage}</button></div>
+                      <div className="siDetailTexts"><span className="siPrice">${props.price}</span><span className="siTaxOp">Includes taxes
+                          and fees</span><a href="checkoutrule" className="btn btn-primary btn-sm ">Reserve</a></div>
                     </div>
                   </div>
                 </div>

@@ -33,7 +33,7 @@ function CheckoutBookingPriceSection() {
                 </tbody>
             </table>
 
-            <a className="agree-continue" href="checkout2.html">Agree & Continue</a>
+            <a className="agree-continue" href="checkout2">Agree & Continue</a>
 
             <p style={{margintop: "28px", fontWeight: 500}}>Don't worry, you won't be charged yet.</p>
             <p>
