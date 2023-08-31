@@ -15,7 +15,6 @@ function PlaceImageSection() {
                         <div className="col-md-6">
                             <img src={g1} alt="" />
                         </div>
-                        <div className="col-md-6">
                             <div className="col-md-6">
                                 <img src={g1} alt="" />
                             </div>
@@ -27,7 +26,6 @@ function PlaceImageSection() {
                                 <a className="view-all-bts" href="">view all</a>
                                 <a className="view-all-bts" href="">view all</a>
                             </div>
-                        </div>
                     </div>
                 </div>
             </div>

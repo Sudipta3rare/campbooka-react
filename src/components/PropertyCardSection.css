@@ -1,86 +1,86 @@
-.viewpropert .viewproperty-wrap .viewproperty-wrap-box{
-    padding: 25px 0px;
-    box-shadow: 0px 1px 9px 0px #414451; 
-    padding: 18px 22px;
-  }
-
-  .viewpropert .viewproperty-wrap .viewproperty-wrap-box p{
-    margin-bottom: 8px;
-  }
-
-  .viewpropert .viewproperty-wrap .viewproperty-wrap-box h6{
-    color: #0071c2;
-    font-size: 20px;
-  }
-
-
-  .viewpropert .viewproperty-wrap .viewproperty-wrap-box .siTaxiOp{
-  background-color: #414451;
-    border-radius: 5px;
-    color: #fff;
-    padding: 3px;
-    width: -webkit-max-content;
-    width: max-content;
-  }
-
-  .viewpropert .viewproperty-wrap .viewproperty-wrap-box .des-wrap .t1{
-    font-weight: 600;
-    color: #b46a25;
-  }
-
-  .viewpropert .viewproperty-wrap .viewproperty-wrap-box .des-wrap .t4{
-    color: #903230;
-  }
-
-  .viewpropert .viewproperty-wrap .viewproperty-wrap-box .des-wrap .t3{
-    font-size: 14px;
-  }
-
-  .siDetails {
-    flex: 1 1;
-    flex-direction: column;
+.viewport .viewproperty-wrap .viewproperty-wrap-box{
+  padding: 25px 0px;
+  box-shadow: 0px 1px 9px 0px #414451; 
+  padding: 18px 22px;
 }
 
-  .siDetails .siRating {
-    display: flex;
-    justify-content: space-between;
+.viewport .viewproperty-wrap .viewproperty-wrap-box p{
+  margin-bottom: 8px;
+}
+
+.viewport .viewproperty-wrap .viewproperty-wrap-box h6{
+  color: #0071c2;
+  font-size: 20px;
+}
+
+
+.viewport .viewproperty-wrap .viewproperty-wrap-box .siTaxiOp{
+background-color: #414451;
+  border-radius: 5px;
+  color: #fff;
+  padding: 3px;
+  width: -webkit-max-content;
+  width: max-content;
+}
+
+.viewport .viewproperty-wrap .viewproperty-wrap-box .des-wrap .t1{
+  font-weight: 600;
+  color: #b46a25;
+}
+
+.viewport .viewproperty-wrap .viewproperty-wrap-box .des-wrap .t4{
+  color: #903230;
+}
+
+.viewport .viewproperty-wrap .viewproperty-wrap-box .des-wrap .t3{
+  font-size: 14px;
+}
+
+.siDetails {
+  flex: 1 1;
+  flex-direction: column;
+}
+
+.siDetails .siRating {
+  display: flex;
+  justify-content: space-between;
 }
 
 .siRating>span {
-    font-weight: 500;
+  font-weight: 500;
 }
 
 .siRating>button {
-    background-color: #003580;
-    border: none;
-    color: #fff;
-    font-weight: 700;
-    padding: 5px;
+  background-color: #003580;
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  padding: 5px;
 }
 
 .siDetailTexts {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    text-align: right;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  text-align: right;
 }
 
 .siTaxOp {
-    color: gray;
-    font-size: 12px;
+  color: gray;
+  font-size: 12px;
 }
 
 .siCheckButton {
-    background-color: #0071c2;
-    border: none;
-    border-radius: 3px;
-    color: #fff;
-    cursor: pointer;
-    font-weight: 500;
-    padding: 10px 52px;
-   
+  background-color: #0071c2;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 500;
+  padding: 10px 52px;
+
 }
 
 .siPrice{
-    margin-top: 50px;
+  margin-top: 50px;
 }

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import PropertyCard from "./PropertyCard";
 import { API_BASE_URL } from "../configuration/Constants";
+import './PropertyCardSection.css';
 
 function PropertyCardSection(props) {
 
