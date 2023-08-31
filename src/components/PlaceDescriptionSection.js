@@ -1,5 +1,5 @@
 import './PlaceDescriptionSection.css';
-function PlaceDescriptionSection() {
+function PlaceDescriptionSection(props) {
     return (
         <div className="container">
             <div className="row">
