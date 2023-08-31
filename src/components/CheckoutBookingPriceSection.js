@@ -1,6 +1,18 @@
 import g3 from '../images/g3.png';
+import { useNavigate } from 'react-router-dom';
 
-function CheckoutBookingPriceSection() {
+function CheckoutBookingPriceSection(props) {
+    const serviceFee = 28.70;
+    const navigate = useNavigate();
+
+
+    function handleOnClickContinue() {
+        navigate("/checkout2", {
+            state: {
+                price: props.price
+            }
+        })
+    }
     return (
         <div className="col-md-4">
             <div className="booking-img d-flex">
@@ -20,22 +32,22 @@ function CheckoutBookingPriceSection() {
                 <tbody>
                     <tr>
                         <td>Subtotal</td>
-                        <td>$190.00</td>
+                        <td>${props.price}</td>
                     </tr>
                     <tr>
                         <td>Service Fee</td>
-                        <td>$28.70</td>
+                        <td>${serviceFee}</td>
                     </tr>
                     <tr>
                         <td>Total</td>
-                        <td>$218.70</td>
+                        <td>${serviceFee + props.price}</td>
                     </tr>
                 </tbody>
             </table>
 
-            <a className="agree-continue" href="checkout2">Agree & Continue</a>
+            <button className="agree-continue" onClick={handleOnClickContinue} >Agree & Continue</button>
 
-            <p style={{margintop: "28px", fontWeight: 500}}>Don't worry, you won't be charged yet.</p>
+            <p style={{marginTop: "28px", fontWeight: 500}}>Don't worry, you won't be charged yet.</p>
             <p>
                 <i className="fa fa-lock" aria-hidden="true"></i> 
                 <span style={{marginLeft: "10px"}}>Secure checkout</span>
