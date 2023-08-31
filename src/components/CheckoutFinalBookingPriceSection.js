@@ -1,6 +1,8 @@
 import g3 from '../images/g3.png';
 
-function CheckoutFinalBookingPriceSection() {
+function CheckoutFinalBookingPriceSection(props) {
+
+    const serviceFee = 28.70;
     return (
         <div className="col-md-4">
             <div className="booking-img d-flex">
@@ -21,16 +23,16 @@ function CheckoutFinalBookingPriceSection() {
                     <tr>
                         <td>Subttal
                         </td>
-                        <td>$190.00</td>
+                        <td>${props.price}</td>
                     </tr>
                     <tr>
                         <td>Service Fee
                         </td>
-                        <td>$28.70</td>
+                        <td>${serviceFee}</td>
                     </tr>
                     <tr>
                         <td>Total</td>
-                        <td>$218.70</td>
+                        <td>${props.price + serviceFee}</td>
                     </tr>
                 </tbody>
             </table>

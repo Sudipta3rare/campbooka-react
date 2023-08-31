@@ -1,5 +1,6 @@
 import './PropertyCard.css';
 import g1 from '../images/g1.png';
+import { useNavigate } from 'react-router-dom';
 
 function PropertyCard(props) {
 
@@ -12,6 +13,16 @@ function PropertyCard(props) {
       reviewCat = 'Moderate';
     if(props.likePercentage < 40)
       reviewCat = 'Needs Improvement';
+
+    const navigate = useNavigate();
+
+    function handleOnClickReserve() {
+      navigate("/checkoutrule", {
+        state: {
+          price: props.price
+        }
+      });
+    }
 
     return (
         <div className="col-md-12" style={{padding: "25px"}}>
@@ -37,7 +48,7 @@ function PropertyCard(props) {
                     <div className="siDetails">
                       <div className="siRating"><span>{reviewCat}</span><button>{props.likePercentage}</button></div>
                       <div className="siDetailTexts"><span className="siPrice">${props.price}</span><span className="siTaxOp">Includes taxes
-                          and fees</span><a href="checkoutrule" className="btn btn-primary btn-sm ">Reserve</a></div>
+                          and fees</span><a onClick={handleOnClickReserve} className="btn btn-primary btn-sm ">Reserve</a></div>
                     </div>
                   </div>
                 </div>

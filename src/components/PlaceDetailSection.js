@@ -1,7 +1,7 @@
 import './PlaceDetailSection.css';
 function PlaceDetailSection(props) {
     return (
-        <div className="container" style={{margintop: "20px"}}>
+        <div className="container" style={{marginTop: "20px"}}>
             <h1 className="Property-title">{props.placeName}</h1>
                 <div className="btn-gr">
                     <div className="all-btns">

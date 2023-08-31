@@ -1,8 +1,12 @@
+import { useLocation } from "react-router-dom";
 import CheckoutFinalBookingPriceSection from "./CheckoutFinalBookingPriceSection";
 import CheckoutNavbar from "./CheckoutNavbar";
 import CheckoutReviewAndPageSection from "./CheckoutReviewAndPaySection";
 
 function Checkout2Page() {
+    const location = useLocation();
+    const price = location.state.price;
+
     return (
         <>
             <CheckoutNavbar />
@@ -10,7 +14,7 @@ function Checkout2Page() {
                 <div class="container">
                     <div class="row">
                         <CheckoutReviewAndPageSection />
-                        <CheckoutFinalBookingPriceSection />
+                        <CheckoutFinalBookingPriceSection price={price}/>
                     </div>
                 </div>
 
