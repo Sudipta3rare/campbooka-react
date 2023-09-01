@@ -22,7 +22,7 @@ function PlaceCard(props) {
             <div className="card-image">
                 <figure className="image is-4by3">
                     <a onClick={placeCardOnClickHandler}>
-                        <img onClick={placeCardOnClickHandler} src={place1} alt=""/>
+                        <img src={place1} alt=""/>
                     </a>
                 </figure>
             </div>
