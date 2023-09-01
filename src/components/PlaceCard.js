@@ -28,9 +28,13 @@ function PlaceCard(props) {
             </div>
             <div className="card-content">
                 <div className="contents">
+                    <label>
+                        <h4>{props.placeName}</h4>
+                    </label>
+                    <br/>
                     {props.description}
                     <br/>
-                    <small>{props.acres}</small>
+                    <small>{props.acres} acres</small>
                 </div>
             </div>
         </div>
