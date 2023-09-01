@@ -1,5 +1,9 @@
+import Activities from './Activities';
 import './PlaceDescriptionSection.css';
+import Features from './Features';
+
 function PlaceDescriptionSection(props) {
+    
     return (
         <div className="container">
             <div className="row">
@@ -20,44 +24,14 @@ function PlaceDescriptionSection(props) {
                     <div className="row">
                         <div className="col-md-6">
                             <div className="facilites-list">
-                                <h5 > Activites</h5>
-                                <ul>
-                                    <li>
-                                        <i className="fa fa-tree" aria-hidden="true"></i>
-                                        Fishing
-                                    </li>
-                                    <li>
-                                        <i className="fa fa-tree" aria-hidden="true"></i>
-                                        Fishing
-                                    </li>
-                                    <li><i className="fa fa-tree" aria-hidden="true"></i>
-                                        Fishing</li>
-                                    <li><i className="fa fa-tree" aria-hidden="true"></i>
-                                        Fishing</li>
-                                    <li><i className="fa fa-tree" aria-hidden="true"></i>
-                                        Fishing</li>
-                                </ul>
+                                <h5>Activites</h5>
+                                <Activities placeId={props.placeId} />
                             </div>
                         </div>
                         <div className="col-md-6">
                             <div className="facilites-list">
-                                <h5 style={{marginleft: "40px"}}> Feature</h5>
-                                <ul>
-                                    <li>
-                                        <i className="fa fa-tree" aria-hidden="true"></i>
-                                        Fishing
-                                    </li>
-                                    <li>
-                                        <i className="fa fa-tree" aria-hidden="true"></i>
-                                        Fishing
-                                    </li>
-                                    <li><i className="fa fa-tree" aria-hidden="true"></i>
-                                        Fishing</li>
-                                    <li><i className="fa fa-tree" aria-hidden="true"></i>
-                                        Fishing</li>
-                                    <li><i className="fa fa-tree" aria-hidden="true"></i>
-                                        Fishing</li>
-                                </ul>
+                                <h5 style={{marginLeft: "40px"}}> Feature</h5>
+                                <Features placeId={props.placeId} />
                             </div>
                         </div>
                     </div>

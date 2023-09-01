@@ -21,7 +21,7 @@ function Camperbook() {
             </header>
             <PlaceDetailSection placeName={placeData.placeName} />
             <PlaceImageSection />
-            <PlaceDescriptionSection acres={placeData.acres} description={placeData.description} />
+            <PlaceDescriptionSection placeId={placeData.placeId} acres={placeData.acres} description={placeData.description} />
             <PropertyCardSection placeId={placeData.placeId}/>
             <PlaceHostDetailsSection/>
             <ThingsToDoSection />
