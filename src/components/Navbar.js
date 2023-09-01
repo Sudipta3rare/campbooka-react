@@ -1,7 +1,7 @@
 import './Navbar.css';
 import SiteLogo from '../images/logo.png'
 
-function Navbar() {
+function Navbar(props) {
     return (
         <div className="header-bottom">
             <div className="container">
@@ -156,13 +156,12 @@ function Navbar() {
                                 <a className="nav-link" href="Host">Become a Host</a>
                             </li>
                             <li className="nav-item">
-                                <a
+                                <button
                                     className="nav-link menu-btn"
-                                    href="#"
                                     data-toggle="modal"
                                     data-target="#exampleModalCenter"
-                                >Log In</a
-                                >
+                                    onClick={props.doLogin}
+                                >Log In</button>
                             </li>
                         </ul>
                     </div>
