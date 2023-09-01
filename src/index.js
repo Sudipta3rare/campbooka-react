@@ -4,6 +4,22 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
+import './fonts/TrueLies.woff';
+import './fonts/TrueLies.woff2';
+import './fonts/unicode.impact-webfont.woff';
+import './fonts/unicode.impact-webfont.woff2';
+import './fonts/Poppins-Medium.woff';
+import './fonts/Poppins-Medium.woff2';
+import './fonts/Poppins-MediumItalic.woff';
+import './fonts/Poppins-MediumItalic.woff2';
+import './fonts/Poppins-Regular.woff';
+import './fonts/Poppins-Regular.woff2';
+import './fonts/LocalGoodsOutline.woff';
+import './fonts/LocalGoodsOutline.woff2';
+import './fonts/Agenor-Black.woff';
+import './fonts/Agenor-Black.woff2';
+import './fonts/Agenor-Light.woff';
+import './fonts/Agenor-Light.woff2';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
