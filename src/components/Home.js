@@ -12,12 +12,25 @@ import SectionEndMenu from './SectionEndMenu';
 import Safety from './Safety';
 import Footer from './Footer';
 import Plan from './Plan';
+import OverlayForModal from './OverlayForModal';
+import LoginModal from './LoginModal';
+import { useState } from 'react';
 
 function Home() {
+  const [overlayDisplay, setOverlayDisplay] = useState(false);
+
+  function handleShowModal () {
+    setOverlayDisplay(true);
+  }
+
+  function handleCloseModal () {
+    setOverlayDisplay(false);
+  }
+  
   return (
     <>
       <header>
-        <Navbar />
+        <Navbar doLogin={handleShowModal}/>
       </header>
       <Banner />
       <MainForm />
@@ -32,6 +45,9 @@ function Home() {
       <SectionEndMenu />
       <Safety />
       <Footer />
+      {overlayDisplay && <OverlayForModal />}
+      {overlayDisplay && <LoginModal doCloseModal={handleCloseModal}/>}
+      
     </>
   );
 }
