@@ -1,8 +1,8 @@
 import './OverlayForModal.css';
 
-function OverlayForModal(props) {
+function OverlayForModal() {
     return (
-        <div class="modal-backdrop fade show"></div>
+        <div className="modal-backdrop fade show"></div>
     );
 }
 
