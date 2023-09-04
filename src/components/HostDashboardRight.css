@@ -1,0 +1,60 @@
+.campbody-wrap .campbody-right .properties .img-wrap .img-1{
+    width: 250;
+    height: 170;
+}
+
+.campbody-wrap .campbody-right .properties .img-wrap .img-2{
+    width: 250;
+    height: 170;
+    margin-left: 10px;
+}
+
+.campbody-wrap .campbody-right .properties .img-wrap .img-3{
+    width: 250;
+    height: 170;
+    margin-left: 10px;
+}
+.campbody-right{
+    padding: 20px; 
+    border: 1px solid #0003;
+    margin-top: 20px;
+    width: 100%;
+}
+.campbody .campbody-wrap .campbody-right .img-wrap{
+    display: grid;
+    grid-template-columns: 33.333% 33.333% 33.333%;
+}
+.campbody .campbody-wrap .campbody-right .img-wrap img{
+    width: 80%;
+}
+.booking-history table .pic{   
+    width: 100px;
+}
+
+.booking-history .table tbody:not(.expanded) tr:nth-child(n+4) {
+    display: none;
+  }
+
+  .booking-history .read-more {
+    display: inline-block;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+
+  .booking-history{
+    padding: 20px;
+  }
+
+  .booking-history h4{
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  .booking-history .table tr{
+   font-size: 14px;
+   
+  }
+ .booking-history  .read-more{
+    display: flex;
+    justify-content: center;
+  }
