@@ -8,6 +8,8 @@ import CamperSearch from './components/CamperSearch';
 import Camperbook from './components/Camperbook';
 import Checkout from './components/Checkout';
 import Checkout2Page from './components/Checkout2Page';
+import Admin from './components/Admin';
+
 
 function App() {
   return (
@@ -21,6 +23,7 @@ function App() {
       <Route path='camperbook' element={<Camperbook/>}/>
       <Route path='checkoutrule' element={<Checkout />} />
       <Route path='checkout2' element={<Checkout2Page/>} />
+      <Route path='admin' element={<Admin/>} />
     </Routes>
    </>
   );
