@@ -19,13 +19,10 @@
         "build": "react-scripts build",
         "test": "react-scripts test",
         "eject": "react-scripts eject",
-
-        "start:dev": "env-cmd -f dev.env npm start", 
+        "start:dev": "env-cmd -f dev.env npm start",
         "build:dev": "env-cmd -f dev.env npm build",
-
         "start:stag": "env-cmd -f stag.env npm start",
         "build:stag": "env-cmd -f stag.env npm build",
-
         "start:prod": "env-cmd -f prod.env npm start",
         "build:prod": "env-cmd -f prod.env npm start"
     },

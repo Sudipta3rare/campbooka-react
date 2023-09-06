@@ -1,4 +1,6 @@
 import './CampingSectionOne.css';
+import Camp1 from '../images/camping1.png';
+import Camp2 from '../images/camping2.png';
 
 function CampingSectionOne() {
     return (
@@ -6,7 +8,7 @@ function CampingSectionOne() {
       <div className="container">
         <div className="camping-content-box1">
           <div className="camping-content-box1-img">
-            <img src="images/camping1.png" alt=""/>
+            <img src={Camp1} alt=""/>
           </div>
           <div className="camping-content-box1-text">
             <h3>CAMP<span>BOOKA</span></h3>
@@ -22,7 +24,7 @@ function CampingSectionOne() {
             <a>Enter to Win</a>
           </div>
           <div className="camping-content-box2-img">
-            <img src="images/camping2.png" alt="" />
+            <img src={Camp2} alt="" />
           </div>
         </div>
       </div>
