@@ -1,11 +1,17 @@
 import { useState } from "react";
+import { useNavigate, useLocation } from "react-router";
 import { API_BASE_URL } from "../configuration/Constants";
 import Cookies from "universal-cookie";
+import useAuth from "../hooks/useAuth";
 
 function LoginModal(props) {
 
+    const { setAuth } = useAuth();
     const [username, setUsername] = useState("");
     const [pwd, setPwd] = useState("");
+    const navigate = useNavigate();
+    const location = useLocation();
+    const from =  "/userdashboard" //location?.state?.from?.pathname || "/"
     const cookies = new Cookies();
 
     function handleUsernameChange(event) {
@@ -33,11 +39,14 @@ function LoginModal(props) {
 
         // this is not a httpOnly cookie - but a normal
         // in later stages of development we might shift to httponly cookie for enhanced security.
-
+        
         cookies.set("JWT", jwtToken, {
             sameSite: "strict", 
-            path: "/", 
-            expires: new Date(new Date().getTime() + (hours * 60 * 60 * 1000))});
+            path: "/",
+            expires: new Date(new Date().getTime() + (hours * 60 * 60 * 1000))
+        });
+        setAuth({jwtToken});
+        navigate("/userdashboard");
     }
 
     return (
