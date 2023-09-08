@@ -1,18 +1,14 @@
 import { useLocation, Navigate, Outlet } from "react-router";
 import useAuth from "../hooks/useAuth";
-import Cookies from "universal-cookie";
 
 function RequireAuth () {
-    const { auth, setAuth } = useAuth();
-    const location = useLocation();
     
-    const cookies = new Cookies();
-    const token = cookies.get("JWT");
-    token && setAuth({"jwtToken": token});
+    const location = useLocation();
+    const { auth, setAuth } = useAuth();
 
     return (
-        auth?.jwtToken 
-            ? <Outlet /> 
+        auth?.jwtToken
+            ? <Outlet />
             : <Navigate to="/" state={{ from: location }} replace />
     );
 }

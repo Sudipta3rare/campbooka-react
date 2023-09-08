@@ -29,9 +29,7 @@ function App() {
         <Route element={<RequireAuth />}>
           <Route path='userdashboard' element={<UserDashboard />} />
         </Route>
-      </Route>
-
-      
+      </Route>     
     </Routes>
    </>
   );

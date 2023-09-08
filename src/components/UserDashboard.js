@@ -1,7 +1,8 @@
 import CampBodyLeft from './CampBodyLeft';
 import Navbar from './Navbar';
 import CampBodyRight from './CampBodyRight';
-function UserDashboard(){
+
+function UserDashboard() {
     return(
         <>
             <Navbar/>

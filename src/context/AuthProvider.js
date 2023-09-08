@@ -1,9 +1,11 @@
-import { createContext, useState } from 'react';
+import { createContext, useEffect, useState } from 'react';
+import Cookies from 'universal-cookie';
 
 const AuthContext = createContext({});
 
 export const AuthProvider = (props) => {
-    const [auth, setAuth] = useState({});
+    const jwtToken = new Cookies().get("JWT");
+    const [auth, setAuth] = useState( jwtToken ? {jwtToken} : {} );
 
     return (
         <AuthContext.Provider value={{ auth, setAuth }} >
