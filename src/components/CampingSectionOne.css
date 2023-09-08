@@ -1,7 +1,7 @@
 .camping-sec{
     position: relative;
     background: #3b3737;
-    padding: 120px 0 60px 0;
+    padding: 190px 0 60px 0;
 
 }
 
@@ -27,6 +27,7 @@
     color: #ffffffa6;
     font-size: 150px;
     margin-left: -22rem;
+    margin-bottom: 50px;
 }
 
 .camping-sec .camping-content-box1 .camping-content-box1-text h3 span{
@@ -66,6 +67,7 @@
     margin-right: -22rem;
     position: relative;
     z-index: 9;
+    margin-bottom: 50px;
 }
 
 .camping-sec .camping-content-box2 .camping-content-box2-text h3 span{
