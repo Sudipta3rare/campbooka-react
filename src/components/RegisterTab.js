@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { API_BASE_URL } from "../configuration/Constants";
 
-function RegisterTab() {
+function RegisterTab(props) {
 
     const [fullname, setFullname] = useState('');
     const [emailId, setEmailId] = useState('');
@@ -45,8 +45,8 @@ function RegisterTab() {
             password: pwd,
         });
         const response = await fetch(API_BASE_URL + "/auth/signup", requestOptions);
-        
-        response.status === 200 ? console.log("Registration Success !"): console.log("registration unsuccess !");
+
+        props.doRegister(response.status); 
     }
 
     return (

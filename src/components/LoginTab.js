@@ -49,7 +49,7 @@ function LoginTab() {
             expires: new Date(new Date().getTime() + (hours * 60 * 60 * 1000))
         });
         setAuth({jwtToken});
-        navigate("/userdashboard");
+        navigate("/userdashboard", { state: { email: username } } );
     }
 
     return (
