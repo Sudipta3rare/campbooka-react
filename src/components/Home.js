@@ -10,6 +10,7 @@ import Places from './Places';
 import Gateway from './Gateway';
 import SectionEndMenu from './SectionEndMenu';
 import Safety from './Safety';
+import SafetyPartner from './SafetyPartner';
 import Footer from './Footer';
 import Plan from './Plan';
 import OverlayForModal from './OverlayForModal';
@@ -44,6 +45,7 @@ function Home() {
       <Gateway />
       <SectionEndMenu />
       <Safety />
+      <SafetyPartner/>
       <Footer />
       {overlayDisplay && <OverlayForModal />}
       {overlayDisplay && <LoginModal doCloseModal={handleCloseModal}/>}

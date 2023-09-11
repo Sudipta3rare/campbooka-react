@@ -1,3 +1,10 @@
+import './Places.css';
+import Place1 from '../images/place1.png';
+import Place2 from '../images/place2.png';
+import Place3 from '../images/place3.png';
+
+
+
 function Places() {
     return (
         <section className="places">
@@ -13,7 +20,7 @@ function Places() {
             <div className="row">
               <div className="col-md-6">
                 <div className="places-wrap-img">
-                  <img src="images/place1.png" alt="" />
+                  <img src={Place1} alt="" />
                 </div>
               </div>
               <div className="col-md-6">
@@ -40,7 +47,7 @@ function Places() {
               </div>
               <div className="col-md-6">
                 <div className="places-wrap-img">
-                  <img src="images/place1.png" alt="" />
+                  <img src={Place1} alt="" />
                   <p>
                     Easily book secluded outdoor tent sites, RV sites, and
                     glamping stays on private lands from blueberry farms to
@@ -66,7 +73,7 @@ function Places() {
               </div>
               <div className="col-md-6">
                 <div className="places-wrap-img">
-                  <img src="images/place2.png" alt="" />
+                  <img src={Place2} alt="" />
                 </div>
               </div>
             </div>
@@ -82,7 +89,7 @@ function Places() {
               </div>
               <div className="col-md-6">
                 <div className="places-wrap-img">
-                  <img src="images/place2.png" alt="" />
+                  <img src={Place2} alt="" />
                   <p>
                     Relax in an outdoor sauna, explore hidden swimming holes, do
                     yoga with the goats, and eat wood-fired pizza under the
@@ -97,7 +104,7 @@ function Places() {
             <div className="row">
               <div className="col-md-6">
                 <div className="places-wrap-img">
-                  <img src="images/place3.png" alt="" />
+                  <img src={Place3} alt="" />
                 </div>
               </div>
               <div className="col-md-6">
@@ -123,7 +130,7 @@ function Places() {
               </div>
               <div className="col-md-6">
                 <div className="places-wrap-img">
-                  <img src="images/place3.png" alt="" />
+                  <img src={Place3} alt="" />
                   <p>
                     By booking with Hipcamp, you're funding the protection of
                     open spaces and supporting the people who support the land.

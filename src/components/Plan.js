@@ -1,3 +1,4 @@
+import './Plan.css';
 function Plan() {
     return (
         <section className="plan">

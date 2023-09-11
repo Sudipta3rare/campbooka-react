@@ -1,0 +1,39 @@
+/*.....................
+        partners
+......................*/
+.partner{
+    background: #181818;
+    padding: 60px;
+}
+
+.partner .section-head h3{
+font-family: 'impactregular';
+color: #fff;
+font-size:40px;
+text-align: center;
+text-transform: uppercase;
+letter-spacing: 1px;
+margin-bottom: 60px;
+font-weight: 100;
+}
+
+.partner .section-head h3 span{
+color: #ff1100;   
+}
+
+.partner .partner-wrap .partner-wrap-box img{
+width: 50%;
+}
+
+.partner .partner-wrap .partner-wrap-box h4
+{
+color: #fff;
+font-size: 30px;
+margin-top: 20px;
+}
+.partner .partner-wrap .partner-wrap-box p
+{
+color: #fff;
+margin-top: 20px;
+font-weight: 300;
+}

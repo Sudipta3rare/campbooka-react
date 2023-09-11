@@ -1,9 +1,14 @@
+import logo from '../images/logo.png';
+import F1 from '../images/f1.png';
+import F2 from '../images/f2.png';
+import F3 from '../images/f3.png';
+
 function Footer() {
     return (
         <footer className="footer-main">
             <div className="container">
                 <div className="footer-logo">
-                    <a href="index.html"><img src="./images/logo.png" alt="" /></a>
+                    <a href="index.html"><img src={logo} alt="" /></a>
                 </div>
                 <div className="footer-top">
                     <div className="footer-wrap">
@@ -50,14 +55,14 @@ function Footer() {
                             <div className="col-md-3">
                                 <ul className="footer-menu">
                                     <li>
-                                        <a href="#"><img src="images/f1.png" alt="" /></a>
+                                        <a href="#"><img src={F1} alt="" /></a>
                                     </li>
                                     <li>
-                                        <a href="#"><img src="images/f2.png" alt="" /></a>
+                                        <a href="#"><img src={F2} alt="" /></a>
                                     </li>
                                     <li>
                                         <p>SEE OUR CUSTOM ITEMS ON</p>
-                                        <a href="#"><img src="images/f3.png" alt="" /></a>
+                                        <a href="#"><img src={F3} alt="" /></a>
                                     </li>
                                 </ul>
                             </div>

@@ -12,6 +12,7 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 60px;
+    font-weight: 100;
 }
 
 .places .section-head h3 span{
@@ -27,6 +28,8 @@
     font-family: 'impactregular';
     color: transparent;
     letter-spacing: 2px;
+    font-weight: 100;
+    display: initial;
 }
 .places .places-wrap-sec .places-wrap1 h4, .places .places-wrap-sec .places-wrap2 h4
 {
@@ -35,6 +38,7 @@
     letter-spacing: 1px;
     font-size: 40px;
     line-height: 40px;
+    font-weight: 100;
 }
 .places .places-wrap-sec .places-wrap1 p, .places .places-wrap-sec .places-wrap2 p
 {

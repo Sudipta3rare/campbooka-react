@@ -1,3 +1,5 @@
+import './Campsite.css';
+import CampImg from '../images/campsite-img.png';
 function Campsite() {
     return (
         <section className="campsite">
@@ -7,7 +9,7 @@ function Campsite() {
                 <p>Find a spot to camp along the path of totality.</p>
                 </div>
                 <div className="campsite-image">
-                <img src="images/campsite-img.png" alt="" />
+                <img src={CampImg} alt="" />
                 <a href="#">Find a campsite</a>
                 </div>
             </div>
