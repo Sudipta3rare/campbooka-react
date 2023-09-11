@@ -6,15 +6,15 @@ import Prtn3 from '../images/p3.png';
 
 function SafetyPartner() {
     return (
-        <section class="partner">
-      <div class="container">
-        <div class="section-head">
+        <section className="partner">
+      <div className="container">
+        <div className="section-head">
           <h3>Safety <span>partners</span></h3>
         </div>
-        <div class="partner-wrap">
-          <div class="row">
-            <div class="col-md-4">
-              <div class="partner-wrap-box">
+        <div className="partner-wrap">
+          <div className="row">
+            <div className="col-md-4">
+              <div className="partner-wrap-box">
                 <img src={Prtn1} alt="" />
                 <h4>Recreate Responsibly</h4>
                 <p>1. Know before you go</p>
@@ -26,8 +26,8 @@ function SafetyPartner() {
                 <p>7. Build an inclusive outdoors</p>
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="partner-wrap-box">
+            <div className="col-md-4">
+              <div className="partner-wrap-box">
                 <img src={Prtn2} alt="" />
                 <h4>Leave No Trace</h4>
                 <p>1. Plan ahead and prepare</p>
@@ -39,8 +39,8 @@ function SafetyPartner() {
                 <p>7. Be considerate of others</p>
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="partner-wrap-box">
+            <div className="col-md-4">
+              <div className="partner-wrap-box">
                 <img src={Prtn3} alt="" />
                 <h4>National Weather Service</h4>
                 <p>

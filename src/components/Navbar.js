@@ -1,13 +1,14 @@
 import './Navbar.css';
 import SiteLogo from '../images/logo.png'
 import useAuth from '../hooks/useAuth';
+import Cookies from 'universal-cookie';
 
 function Navbar(props) {
-    const { auth } = useAuth();
+    const { auth, setAuth } = useAuth();
 
     function doLogout() {
-        setAuth({});
         new Cookies().remove("JWT");
+        setAuth({});
     }
 
     return (
