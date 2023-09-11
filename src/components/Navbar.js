@@ -1,7 +1,15 @@
 import './Navbar.css';
 import SiteLogo from '../images/logo.png'
+import useAuth from '../hooks/useAuth';
 
 function Navbar(props) {
+    const { auth } = useAuth();
+
+    function doLogout() {
+        setAuth({});
+        new Cookies().remove("JWT");
+    }
+
     return (
         <div className="header-bottom">
             <div className="container">
@@ -160,8 +168,9 @@ function Navbar(props) {
                                     className="nav-link menu-btn"
                                     data-toggle="modal"
                                     data-target="#exampleModalCenter"
-                                    onClick={props.doLogin}
-                                >Log In</button>
+                                    onClick={auth?.jwtToken ? doLogout : props.doLogin}>
+                                        { auth?.jwtToken ? "Log out" : "Log In" }
+                                </button>
                             </li>
                         </ul>
                     </div>
