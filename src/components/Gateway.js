@@ -1,4 +1,13 @@
-
+import './Gateway.css';
+import Gal1 from '../images/g1.png';
+import Gal2 from '../images/g2.png';
+import Gal3 from '../images/g3.png';
+import Gal4 from '../images/g4.png';
+import Gal5 from '../images/g5.png';
+import Gal6 from '../images/g6.png';
+import Gal7 from '../images/g7.png';
+import Gal8 from '../images/g8.png';
+import Gal9 from '../images/g9.png';
 
 function Gateway() {
     return (
@@ -10,49 +19,49 @@ function Gateway() {
 
                 <div className="gateway-wrap">
                     <div className="gateway-wrap-box">
-                        <a href="#"><img src="../images/g1.png" /></a>
+                        <a href="#"><img src={Gal1} /></a>
                         <div className="gateway-img-content">
                             <h3>Beach Stays</h3>
                             <p>Set up by the water</p>
                         </div>
                     </div>
                     <div className="gateway-wrap-box">
-                        <a href="#"><img src="../images/g2.png" /></a>
+                        <a href="#"><img src={Gal2} /></a>
                         <div className="gateway-img-content">
                             <h3>Lorem</h3>
                             <p>Set up by the water</p>
                         </div>
                     </div>
                     <div className="gateway-wrap-box">
-                        <a href="#"><img src="../images/g3.png" /></a>
+                        <a href="#"><img src={Gal3} /></a>
                         <div className="gateway-img-content">
                             <h3>Lorem</h3>
                             <p>Set up by the water</p>
                         </div>
                     </div>
                     <div className="gateway-wrap-box">
-                        <a href="#"><img src="../images/g4.png" /></a>
+                        <a href="#"><img src={Gal4} /></a>
                         <div className="gateway-img-content">
                             <h3>Lorem</h3>
                             <p>Set up by the water</p>
                         </div>
                     </div>
                     <div className="gateway-wrap-box">
-                        <a href="#"><img src="../images/g5.png" /></a>
+                        <a href="#"><img src={Gal5} /></a>
                         <div className="gateway-img-content">
                             <h3>Lorem</h3>
                             <p>Set up by the water</p>
                         </div>
                     </div>
                     <div className="gateway-wrap-box">
-                        <a href="#"><img src="../images/g6.png" /></a>
+                        <a href="#"><img src={Gal6} /></a>
                         <div className="gateway-img-content">
                             <h3>Lorem</h3>
                             <p>Set up by the water</p>
                         </div>
                     </div>
                     <div className="gateway-wrap-box">
-                        <a href="#"><img src="../images/g7.png" /></a>
+                        <a href="#"><img src={Gal7} /></a>
                         <div className="gateway-img-content">
                             <h3>Lorem</h3>
                             <p>Set up by the water</p>
@@ -60,7 +69,7 @@ function Gateway() {
                     </div>
                     <div className="gateway-wrap-box">
                         <a href="#">
-                            <img src="../images/g8.png" />
+                            <img src={Gal8} />
                         </a>
                         <div className="gateway-img-content">
                             <h3>Lorem</h3>
@@ -68,7 +77,7 @@ function Gateway() {
                         </div>
                     </div>
                     <div className="gateway-wrap-box">
-                        <a href="#"><img src="../images/g9.png" /></a>
+                        <a href="#"><img src={Gal9} /></a>
                         <div className="gateway-img-content">
                             <h3>Lorem</h3>
                             <p>Set up by the water</p>
