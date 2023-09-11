@@ -4,6 +4,12 @@ import RegisterTab from "./RegisterTab";
 
 function LoginModal(props) {
     const [toggleLoginOrReg, setToggleLoginOrReg] = useState(true); // true for login | false for register
+    const [unregistered, setUnregistered] = useState(true);
+
+    function handleRegistration(httpstatus) {
+        httpstatus === 200
+            && setUnregistered(false);
+    }
 
     return (
         <div
@@ -35,7 +41,12 @@ function LoginModal(props) {
                         </ul>
 
                         <div className="tab-content">
-                            { toggleLoginOrReg ? <LoginTab /> : <RegisterTab /> }
+                            { 
+                                toggleLoginOrReg 
+                                    ? <LoginTab /> 
+                                    : unregistered 
+                                        ? <RegisterTab doRegister={handleRegistration} /> : <div></div>
+                            }
                         </div>
                     </div>
                 </div>
