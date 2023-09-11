@@ -27,11 +27,11 @@ function Home() {
   function handleCloseModal () {
     setOverlayDisplay(false);
   }
-  
+
   return (
     <>
       <header>
-        <Navbar doLogin={handleShowModal}/>
+        <Navbar doLogin={ handleShowModal }/>
       </header>
       <Banner />
       <MainForm />
