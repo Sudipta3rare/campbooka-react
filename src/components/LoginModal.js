@@ -1,6 +1,7 @@
 import { useState } from "react";
 import LoginTab from "../components/LoginTab";
 import RegisterTab from "./RegisterTab";
+import './LoginModal.css';
 
 function LoginModal(props) {
     const [toggleLoginOrReg, setToggleLoginOrReg] = useState(true); // true for login | false for register
@@ -45,7 +46,8 @@ function LoginModal(props) {
                                 toggleLoginOrReg 
                                     ? <LoginTab /> 
                                     : unregistered 
-                                        ? <RegisterTab doRegister={handleRegistration} /> : <div></div>
+                                        ?  <RegisterTab doRegister={handleRegistration} /> 
+                                        : <div><p className="rg-s">Registration Successfull</p></div>
                             }
                         </div>
                     </div>
