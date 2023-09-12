@@ -1,4 +1,5 @@
 import CampBodyLeft from './CampBodyLeft';
+import './UserDashboard.css';
 import Navbar from './Navbar';
 import CampBodyRight from './CampBodyRight';
 import { useLocation } from 'react-router-dom';

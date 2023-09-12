@@ -2,14 +2,20 @@ import './Navbar.css';
 import SiteLogo from '../images/logo.png'
 import useAuth from '../hooks/useAuth';
 import Cookies from 'universal-cookie';
+import { useEffect, useState } from 'react';
 
 function Navbar(props) {
     const { auth, setAuth } = useAuth();
+    const [buttonText, setButtonText] = useState('');
 
     function doLogout() {
         new Cookies().remove("JWT");
         setAuth({});
     }
+
+    useEffect(() => {
+        setButtonText(auth?.jwtToken ? "Log out" : "Log In");
+    }, []);
 
     return (
         <div className="header-bottom">
@@ -170,7 +176,7 @@ function Navbar(props) {
                                     data-toggle="modal"
                                     data-target="#exampleModalCenter"
                                     onClick={auth?.jwtToken ? doLogout : props.doLogin}>
-                                        { auth?.jwtToken ? "Log out" : "Log In" }
+                                        { buttonText }
                                 </button>
                             </li>
                         </ul>
