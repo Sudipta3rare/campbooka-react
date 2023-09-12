@@ -10,6 +10,7 @@ function Navbar(props) {
 
     function doLogout() {
         new Cookies().remove("JWT");
+        setButtonText("Log In");
         setAuth({});
     }
 
