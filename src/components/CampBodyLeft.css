@@ -5,9 +5,15 @@
 }
 
 .box-2{
-  margin-top: 63px;
-  margin-left: 60px;
+    margin-top: 0;
+    margin-left: 0;
+    display: flex;
+    align-items: baseline;
+    grid-gap: 12px;
     
+}
+.campbody-left-box2 .box-1{
+    text-align: left;
 }
 .btn-2{
     margin-top: 12px;
@@ -29,7 +35,10 @@
     padding: 20px; 
     border: 1px solid #0003;
 }
-
+.campbody-left-box3 .d-flex{
+    align-items: baseline;
+    grid-gap: 12px;
+}
 .campbody-left-box4{
     padding: 20px; 
     border: 1px solid #0003;

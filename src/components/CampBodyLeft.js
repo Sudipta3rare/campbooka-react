@@ -41,14 +41,14 @@ function CampBodyLeft(props) {
               <i className="fa fa-map-marker" aria-hidden="true"></i>
               <p style={{ marginleft: "10px" }}>{data?.city}</p>
             </div>
-            <p>{data?.bio}</p>
+            <p style={{ marginleft: "10px" }} >{data?.bio}</p>
             <a href="camp-EditPofile.html">Edit profile</a>
           </div>
         </div>
       </div>
 
       <div className="campbody-left-box2" >
-        <div className="connect d-flex">
+        <div className="connect">
           <div className="box-1">
 
             <p>Trusted Campbooka</p>
@@ -57,9 +57,10 @@ function CampBodyLeft(props) {
               <p className="p4" >{data?.email}</p>
             </div>
 
-            <p>Facebook</p>
+            
           </div>
           <div className="box-2">
+          <p>Facebook</p>
             <button className="btn btn-primary btn-sm btn-2">+Connect</button>
           </div>
         </div>

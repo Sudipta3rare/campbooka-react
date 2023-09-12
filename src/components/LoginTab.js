@@ -39,14 +39,14 @@ function LoginTab() {
         const responseData = await response.json();
         const jwtToken = response.headers.get("Token");
         const hours = process.env.REACT_APP_COOKIES_EXPIRY_IN_HOURS;
-
+        const cookieExpiryTime = new Date().getTime() + (hours * 60 * 60 * 1000);
         // this is not a httpOnly cookie - but a normal
         // in later stages of development we might shift to httponly cookie for enhanced security.
         
         cookies.set("JWT", jwtToken, {
             sameSite: "strict", 
             path: "/",
-            expires: new Date(new Date().getTime() + (hours * 60 * 60 * 1000))
+            expires: new Date(cookieExpiryTime)
         });
         setAuth({jwtToken});
         navigate("/userdashboard", { state: { email: username } } );

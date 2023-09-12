@@ -1,5 +1,8 @@
 .campbody-wrap .campbody-left .campbody-left-box .img-bellow p{
-    margin-left: 10px;
+    margin-left: 0;
+}
+.campbody-wrap .campbody-left .campbody-left-box .img-bellow i{
+    margin-right: 5px;
 }
 
 .campbody-wrap .campbody-left .campbody-left-box .img-bellow .dave{
@@ -61,6 +64,7 @@
 
 .campbody-wrap .campbody-left .img-bellow{
     margin-top: 26px;
+    text-align: left;
 }
 
 .campbody-wrap .campbody-left .img-bellow p{
@@ -72,7 +76,7 @@
 }
 
 .campbody-wrap .campbody-left-box3 .p2{
-    margin-left: 10px; font-size: 16px; font-weight: 600;
+    margin-left: 0; font-size: 16px; font-weight: 600;
 }
 
 .campbody-wrap .campbody-left-box4 {
@@ -81,6 +85,7 @@
 
 .campbody-wrap .campbody-left-box4 p{
     margin-left: 15px;
+    text-align: left;
 }
 
 .campbody-wrap .campbody-left-box2 .box-1 .p4{
