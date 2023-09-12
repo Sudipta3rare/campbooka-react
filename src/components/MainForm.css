@@ -107,5 +107,8 @@
     outline: none;
     background-color: #fff;
 }
+.rs-anim-fade.rs-anim-in {
+    width: auto;
+}
 
 iframe#webpack-dev-server-client-overlay{display:none!important}
