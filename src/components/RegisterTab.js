@@ -44,7 +44,8 @@ function RegisterTab(props) {
             mobileNumber: phoneNo,
             password: pwd,
         });
-        const response = await fetch(API_BASE_URL + "/auth/signup", requestOptions);
+        const signUpApi = props.role === 'USER' ? '/auth/signup' : props.role === 'HOST' ? '/auth/signupHost' : '';
+        const response = await fetch(API_BASE_URL + signUpApi, requestOptions);
 
         props.doRegister(response.status); 
     }

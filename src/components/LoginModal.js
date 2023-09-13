@@ -46,7 +46,7 @@ function LoginModal(props) {
                                 toggleLoginOrReg 
                                     ? <LoginTab /> 
                                     : unregistered 
-                                        ?  <RegisterTab doRegister={handleRegistration} /> 
+                                        ? <RegisterTab doRegister={handleRegistration} role={props.role} /> 
                                         : <div><p className="rg-s">Registration Successfull</p></div>
                             }
                         </div>

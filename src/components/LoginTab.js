@@ -1,8 +1,9 @@
 import { useState } from "react";
-import { useNavigate, useLocation } from "react-router";
+import { useNavigate } from "react-router";
 import { API_BASE_URL } from "../configuration/Constants";
 import Cookies from "universal-cookie";
 import useAuth from "../hooks/useAuth";
+import jwtDecode from "jwt-decode";
 
 
 function LoginTab() {
@@ -11,11 +12,7 @@ function LoginTab() {
     const { setAuth } = useAuth();
     
     const navigate = useNavigate();
-    const location = useLocation();
-    const from =  "/userdashboard" //location?.state?.from?.pathname || "/"
     const cookies = new Cookies();
-
-    
 
     const requestOptions = {
         method: "POST", 
@@ -40,6 +37,8 @@ function LoginTab() {
         const jwtToken = response.headers.get("Token");
         const hours = process.env.REACT_APP_COOKIES_EXPIRY_IN_HOURS;
         const cookieExpiryTime = new Date().getTime() + (hours * 60 * 60 * 1000);
+        const role = jwtDecode(jwtToken).sub.split(',')[2];
+
         // this is not a httpOnly cookie - but a normal
         // in later stages of development we might shift to httponly cookie for enhanced security.
         
@@ -48,8 +47,11 @@ function LoginTab() {
             path: "/",
             expires: new Date(cookieExpiryTime)
         });
-        setAuth({jwtToken});
-        navigate("/userdashboard", { state: { email: username } } );
+        setAuth({jwtToken, role});
+        if(role === "USER")
+            navigate("/userdashboard", { state: { email: username } });
+        else if(role === "HOST")
+            navigate("/hostdashboard", { state: { email: username } });
     }
 
     return (

@@ -14,7 +14,8 @@ function Host() {
                 <HostAboutLeft/>
                 <HostAboutRight/>
             </HostAbout>
-            
+            {overlayDisplay && <OverlayForModal />}
+            {overlayDisplay && <LoginModal doCloseModal={handleCloseModal} role={"HOST"}/>}
 
         </>
     );
