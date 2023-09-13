@@ -11,6 +11,7 @@ import Checkout2Page from './components/Checkout2Page';
 import Layout from './components/Layout';
 import UserDashboard from './components/UserDashboard';
 import RequireAuth from './components/RequireAuth';
+import HostDashboard from './components/HostDashboard';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
 
         <Route element={<RequireAuth />}>
           <Route path='userdashboard' element={<UserDashboard />} />
+          <Route path='hostdashboard' element={<HostDashboard/>} />
         </Route>
       </Route>     
     </Routes>

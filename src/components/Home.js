@@ -48,7 +48,7 @@ function Home() {
       <SafetyPartner/>
       <Footer />
       {overlayDisplay && <OverlayForModal />}
-      {overlayDisplay && <LoginModal doCloseModal={handleCloseModal}/>}
+      {overlayDisplay && <LoginModal doCloseModal={handleCloseModal} role={"USER"}/>}
       
     </>
   );
