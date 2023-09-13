@@ -2,7 +2,8 @@ import './HostNav.css';
 import SiteLogo from '../images/logo.png';
 
 
-function HostNav() {
+function HostNav(props) {
+
     return (
         <header className="header-main">
     <nav className="navbar navbar-expand-lg navbar-light nav1 ">
@@ -24,7 +25,9 @@ function HostNav() {
         </ul>
         <ul className="navbar-nav ml-auto">
           <li className="nav-item">
-            <a className="btn btn-primary m-btn1" href="#" data-toggle="modal" data-target="#exampleModalCenter">Login</a>
+            <button className="btn btn-primary m-btn1" data-toggle="modal" data-target="#exampleModalCenter" onClick={ props.doLogin }>
+              Login
+            </button>
           </li>
         </ul>
       </div>
