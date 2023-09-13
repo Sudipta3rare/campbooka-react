@@ -7,6 +7,7 @@ import { useEffect, useState } from 'react';
 function Navbar(props) {
     const { auth, setAuth } = useAuth();
     const [buttonText, setButtonText] = useState('');
+    const [collapsed, setCollapsed] = useState(true);
 
     function doLogout() {
         new Cookies().remove("JWT");
@@ -26,17 +27,18 @@ function Navbar(props) {
                         <img src={SiteLogo} alt=""/>
                     </a>
                     <button
-                        className="navbar-toggler"
+                        onClick={() => setCollapsed(!collapsed)}
+                        className={collapsed ? "navbar-toggler collapsed": "navbar-toggler"}
                         type="button"
                         data-toggle="collapse"
                         data-target="#navbarSupportedContent"
                         aria-controls="navbarSupportedContent"
-                        aria-expanded="false"
+                        aria-expanded={collapsed ? "false" : "true" }
                         aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
 
-                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div className={collapsed ? "collapse navbar-collapse": "collapse navbar-collapse show"} id="navbarSupportedContent">
                         <ul className="navbar-nav">
                             <li className="nav-item dropdown">
                                 <a
