@@ -16,7 +16,7 @@ function Navbar(props) {
     }
 
     useEffect(() => {
-        setButtonText(auth?.jwtToken ? "Log out" : "Log In");
+        setButtonText(auth?.jwtToken ? "Sign out" : "Sign In / Sign Up");
     }, []);
 
     return (

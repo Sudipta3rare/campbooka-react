@@ -26,7 +26,7 @@ function HostNav(props) {
         <ul className="navbar-nav ml-auto">
           <li className="nav-item">
             <button className="btn btn-primary m-btn1" data-toggle="modal" data-target="#exampleModalCenter" onClick={ props.doLogin }>
-              Login
+              Sign In / Sign Up
             </button>
           </li>
         </ul>
