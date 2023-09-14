@@ -42,7 +42,7 @@ function CampBodyLeft(props) {
               <p style={{ marginleft: "10px" }}>{data?.city}</p>
             </div>
             <p style={{ marginleft: "10px" }} >{data?.bio}</p>
-            <a href="camp-EditPofile.html">Edit profile</a>
+            <a href="userProfileEdit">Edit profile</a>
           </div>
         </div>
       </div>

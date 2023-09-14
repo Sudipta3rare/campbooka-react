@@ -1,8 +1,12 @@
 import Navbar from './Navbar';
 import CampBodyLeft from './CampBodyLeft';
 import HostDashboardRight from'./HostDashboardRight';
+import { useLocation } from 'react-router-dom';
 
-function HostDashboard(){
+function HostDashboard() {
+    
+    const location = useLocation();
+
     return(
         <>
         <Navbar/>
@@ -10,7 +14,7 @@ function HostDashboard(){
                 <div className="container">
                     <div className="campbody-wrap">
                         <div className="row">
-                            <CampBodyLeft/>
+                            <CampBodyLeft email={location.state.email}/>
                             <HostDashboardRight/>
                         </div>
                     </div>

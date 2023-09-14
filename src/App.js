@@ -12,6 +12,7 @@ import Layout from './components/Layout';
 import UserDashboard from './components/UserDashboard';
 import RequireAuth from './components/RequireAuth';
 import HostDashboard from './components/HostDashboard';
+import UserEditProfile from './components/UserEditProfile';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
 
         <Route element={<RequireAuth />}>
           <Route path='userdashboard' element={<UserDashboard />} />
+          <Route path='userProfileEdit' element={<UserEditProfile/>} />
           <Route path='hostdashboard' element={<HostDashboard/>} />
         </Route>
       </Route>     
