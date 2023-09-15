@@ -34,20 +34,24 @@ function LoginTab() {
 
         const response = await fetch(API_BASE_URL + "/auth/signin", requestOptions);
         const responseData = await response.json();
+        const email = responseData.email;
         const jwtToken = response.headers.get("Token");
         const hours = process.env.REACT_APP_COOKIES_EXPIRY_IN_HOURS;
-        const cookieExpiryTime = new Date().getTime() + (hours * 60 * 60 * 1000);
         const role = jwtDecode(jwtToken).sub.split(',')[2];
-
+        const cookieOptions = {
+            sameSite: "strict", 
+            path: "/",
+            expires: new Date(new Date().getTime() + (hours * 60 * 60 * 1000))
+        }
         // this is not a httpOnly cookie - but a normal
         // in later stages of development we might shift to httponly cookie for enhanced security.
         
-        cookies.set("JWT", jwtToken, {
-            sameSite: "strict", 
-            path: "/",
-            expires: new Date(cookieExpiryTime)
-        });
-        setAuth({jwtToken, role});
+        cookies.set("JWT", jwtToken, cookieOptions);
+        cookies.set("email", email, cookieOptions);
+        cookies.set("role", role, cookieOptions);
+
+        setAuth({jwtToken, role, email});
+        
         if(role === "USER")
             navigate("/userdashboard", { state: { email: username } });
         else if(role === "HOST")

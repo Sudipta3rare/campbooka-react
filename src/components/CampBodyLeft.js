@@ -1,26 +1,7 @@
 import './CampBodyLeft.css';
 import sf3 from '../images/sf3.png';
-import { useState, useEffect } from 'react';
-import { API_BASE_URL } from '../configuration/Constants';
 
 function CampBodyLeft(props) {
-
-  const [data, setData] = useState(null);
-
-    const requestOptions = {
-        method: "POST", 
-        headers: { "Content-Type": "application/json"},
-        body: null
-    };
-    useEffect(() => {
-        async function getDataFromBackend() {
-            requestOptions.body = JSON.stringify({ email: props.email });
-            const response = await fetch(API_BASE_URL + "/api/user/getDashboardProfile", requestOptions);
-            const responseData = await response.json();
-            setData(responseData);
-        }
-        getDataFromBackend();
-    }, []);
 
   return (
     <div className="col-md-4">
@@ -29,19 +10,19 @@ function CampBodyLeft(props) {
           <div className="dava">
             <img src={sf3} width="60" height="60" alt="img" />
             <div className="img-left">
-              <h3>{data?.name}</h3>
+              <h3>{props.data?.name}</h3>
             </div>
           </div>
           <div className="img-bellow">
             <div className="d-flex align-items-baseline">
               <i className="fa fa-heart" aria-hidden="true"></i>
-              <p>{data?.joinDate}</p>
+              <p>{props.data?.joinDate}</p>
             </div>
             <div className="d-flex align-items-baseline">
               <i className="fa fa-map-marker" aria-hidden="true"></i>
-              <p style={{ marginleft: "10px" }}>{data?.city}</p>
+              <p style={{ marginleft: "10px" }}>{props.data?.city}</p>
             </div>
-            <p style={{ marginleft: "10px" }} >{data?.bio}</p>
+            <p style={{ marginleft: "10px" }} >{props.data?.bio}</p>
             <a href="userProfileEdit">Edit profile</a>
           </div>
         </div>
@@ -54,7 +35,7 @@ function CampBodyLeft(props) {
             <p>Trusted Campbooka</p>
             <div className="d-flex align-items-baseline " >
               <i className="fa fa-check" aria-hidden="true"></i>
-              <p className="p4" >{data?.email}</p>
+              <p className="p4" >{props.data?.email}</p>
             </div>
 
             

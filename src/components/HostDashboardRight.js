@@ -4,13 +4,13 @@ import g3 from '../images/g3.png';
 import g4 from '../images/g4.png';
 import BookingHistory from './BookingHistory';
 
-function HostDashboard() {
+function HostDashboard(props) {
   return (
     <div className="col-md-8">
       <div className="div2">
         <div className="campbody-right">
           <div className="properties">
-            <h2>Dave's Properties</h2>
+            <h2>{props.hostname}'s Properties</h2>
             <div className="img-wrap">
               <img src={g1} alt="p1" />
               <img src={g3} alt="p2" />
