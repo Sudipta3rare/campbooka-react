@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import useAuth from "../hooks/useAuth";
 import { API_BASE_URL } from "../configuration/Constants";
-import g4 from '../images/g4.png';
+import BookingHistoryItem from "./BookingHistoryItem";
 
 function BookingHistory() {
 
@@ -15,7 +15,6 @@ function BookingHistory() {
     };
 
     async function getDataFromBackend() {
-        console.log(auth?.email);
         requestOptions.body = JSON.stringify({ email: auth?.email });
         const response = await fetch(API_BASE_URL + "/api/host/getBookingHistory", requestOptions);
         const responseData = await response.json();
@@ -42,17 +41,12 @@ function BookingHistory() {
                     </thead>
                     <tbody>
                         {data && data.map(d => (
-                            <tr>
-                                <td>
-                                    <div className="pic">
-                                        <img src={g4} alt="p1" />
-                                    </div>
-                                </td>
-                                <td>{d.propertyName}</td>
-                                <td>{d.bookingDate}</td>
-                                <td>{d.camperName}</td>
-                                <td>${d.payableAmount}</td>
-                            </tr>
+                            <BookingHistoryItem 
+                                key={d.propertyName}
+                                propertyName={d.propertyName}
+                                bookingDate={d.bookingDate}
+                                camperName={d.camperName}
+                                payableAmount={d.payableAmount} />
                         ))}
                        
                         
