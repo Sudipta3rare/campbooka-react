@@ -10,7 +10,10 @@ function Navbar(props) {
     const [collapsed, setCollapsed] = useState(true);
 
     function doLogout() {
-        new Cookies().remove("JWT");
+        const cookies = new Cookies();
+        cookies.remove("JWT");
+        cookies.remove("email");
+        cookies.remove("role");
         setButtonText("Log In");
         setAuth({});
     }

@@ -1,20 +1,23 @@
 import { useEffect, useState } from "react";
+import useAuth from "../hooks/useAuth";
 import { API_BASE_URL } from "../configuration/Constants";
-import g1 from '../images/g1.png';
-import g3 from '../images/g3.png';
 import g4 from '../images/g4.png';
 
 function BookingHistory() {
 
     const[data, setData] = useState([]);
+    const { auth } = useAuth();
 
     const requestOptions = {
-        method: "GET", 
-        headers: { "Content-Type": "application/json" }
+        method: "POST", 
+        headers: { "Content-Type": "application/json" },
+        body: null
     };
 
     async function getDataFromBackend() {
-        const response = await fetch(API_BASE_URL + "/api/host/getBookingHistory/12", requestOptions);
+        console.log(auth?.email);
+        requestOptions.body = JSON.stringify({ email: auth?.email });
+        const response = await fetch(API_BASE_URL + "/api/host/getBookingHistory", requestOptions);
         const responseData = await response.json();
         setData(responseData);
     }
