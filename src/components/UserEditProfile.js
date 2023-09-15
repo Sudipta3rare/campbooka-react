@@ -1,6 +1,6 @@
 import Navbar from "./Navbar";
 import UserProfileEdit from "./UserProfileEdit";
-function UserEditProfile(){
+function UserEditProfile() {
     return(
         <>
             <Navbar/>
