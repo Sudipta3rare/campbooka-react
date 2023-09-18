@@ -5,9 +5,9 @@ import useAuth from '../hooks/useAuth';
 
 function UserProfileEdit() {
 
-  const [firstname, setFisrtName] = useState('');
-  const [middlename, setMiddleName] = useState('');
-  const [lastname, setLastName] = useState('');
+  const [firstName, setFisrtName] = useState('');
+  const [middleName, setMiddleName] = useState('');
+  const [lastName, setLastName] = useState('');
   const [emailAddress, setemailAddress] = useState('');
   const [facebookUrl, setFacebookUrl] = useState('');
   const [streetAddress, setStreetAddress] = useState('');
@@ -34,7 +34,7 @@ function UserProfileEdit() {
 
   async function handleUpdateProfile() {
     requestOptions.body = JSON.stringify({
-      username, firstname, middlename, lastname, 
+      username, firstName, middleName, lastName, 
       emailAddress, facebookUrl, streetAddress, 
       suitNo, city, state, zipcode, phoneNumber, 
       camperUrl, bio, publicLocation, personalUrl, 
@@ -117,7 +117,7 @@ function UserProfileEdit() {
                         <div className="col-sm-12">
                           <div className="form-group">
                             <input
-                              value={ firstname }
+                              value={ firstName }
                               onChange={(event) => setFisrtName(event.target.value)}
                               type="text"
                               className="form-control"
@@ -130,7 +130,7 @@ function UserProfileEdit() {
                           <div className="form-group">
                             <input
                               type="text"
-                              value={ middlename }
+                              value={ middleName }
                               onChange={(event) => setMiddleName(event.target.value)}
                               className="form-control"
                               placeholder="Middle Name"
@@ -143,7 +143,7 @@ function UserProfileEdit() {
                               <div className="form-group">
                                 <input
                                   type="text"
-                                  value={ lastname }
+                                  value={ lastName }
                                   onChange={(event) => setLastName(event.target.value)}
                                   className="form-control"
                                   placeholder="Last Name"
