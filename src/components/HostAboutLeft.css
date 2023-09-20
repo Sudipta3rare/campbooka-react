@@ -2,4 +2,9 @@
     font-size: 40px;
 font-family: 'impactregular';
 color: #3c324f;
+line-height: 50px;
+margin-bottom: 12px;
+}
+.hipcamp .section-1 p{
+    text-align: left;
 }

@@ -59,7 +59,7 @@
 .rs-anim-fade{
     position: absolute !important;
     z-index: 99999 !important;
-    width: 400px;
+    width: auto;
 }
 
 

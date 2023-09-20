@@ -1,0 +1,31 @@
+.works{
+    position: relative;
+padding: 40px 0;
+background: #d8cde5;
+}
+
+.works .works-wrap p {
+font-size: 14px;
+font-weight: 400;
+color: #000;
+}
+
+.works .works-wrap span{
+    display: block;
+font-size: 20px;
+margin-top: 20px;
+font-weight: 700;
+}
+
+.works h2{
+margin-bottom: 10px;
+text-align: center;
+font-size: 35px;
+font-family: 'impactregular';
+color: #3c324f;
+}
+
+.works .works-img{
+text-align: center;
+margin-top: 29px;
+}

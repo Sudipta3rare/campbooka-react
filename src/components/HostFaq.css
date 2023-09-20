@@ -1,0 +1,72 @@
+/*.......................
+        faq
+........................*/
+.faq {
+    background: #5e3f83;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 40px 0;
+}
+
+.faq .section-head{
+    font-family: 'impactregular';
+    font-size: 35px;
+    text-transform: capitalize;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: 200;
+}
+
+
+.card-header .title {
+    font-size: 22px;
+    color: #000000;
+}
+.card-header .accicon {
+  float: right;
+  font-size: 25px;  
+  width: 1.2em;
+}
+.card-header{
+  cursor: pointer;
+  border-bottom: none;
+  background: none;
+}
+
+.card-body{
+color: #000;
+}
+.card-header:not(.collapsed) .rotate-icon {
+  transform: rotate(180deg);
+}
+/*.faq .accordion>.card:first-of-type {
+    background: no-repeat;
+    color: #fff;
+}*/
+.faq .accordion>.card{
+    color: #fff;
+    border: 0;
+    background: #d8cde5;
+    margin: 15px;
+    border-bottom: 1px solid #000!important;
+
+}
+.faq.inner{
+    background: #fff;
+}
+.faq.inner .accordion>.card{
+background: #021b2f;
+padding-left: 0;
+padding-right: 0;
+
+}
+
+.up-arrow{
+    color: #000;
+}
+
+.testimonials .item .img-carosel{
+    height: 250px;
+    width: 240px;
+}
