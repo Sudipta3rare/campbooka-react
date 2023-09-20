@@ -5,22 +5,24 @@ import './PropertyCardSection.css';
 
 function PropertyCardSection(props) {
 
+    const headers = new Headers();
+    headers.append("Content-Type", "application/json");
+
     const [data, setData] = useState();
 
     const requestOptions = {
         method: "GET", 
-        headers: { "Content-Type": "application/json"}, 
+        headers: headers, 
     };
 
     useEffect(() => {
         async function getDataFromBackend() {
-            const response = await fetch(API_BASE_URL + '/api/postPropertyFromPlace/' + props.placeId, requestOptions);
+            const response = await fetch(API_BASE_URL + '/api/public/postPropertyFromPlace/' + props.placeId, requestOptions);
             const responseData = await response.json();
             setData(responseData); 
             
         }
         getDataFromBackend();
-        console.log("UseEffect() Hit");
     }, []);
 
     return (

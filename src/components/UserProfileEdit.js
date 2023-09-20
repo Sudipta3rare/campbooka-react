@@ -23,14 +23,20 @@ function UserProfileEdit() {
   const [instagramUrl, setInstagramUrl] = useState('');
   const [twitterUrl, setTwitterUrl] = useState('');
 
+  const { auth } = useAuth();
+  const username = auth?.email;
+
+  const headers = new Headers();
+  headers.append("Content-Type", "application/json");
+  headers.append("Authorization", "Bearer " + auth?.jwtToken);
+
   const requestOptions = {
     method: "POST",
-    headers: { "Content-Type": "application/json" },
+    headers: headers,
     body: null
   };
 
-  const { auth } = useAuth();
-  const username = auth?.email;
+  
 
   async function handleUpdateProfile() {
     requestOptions.body = JSON.stringify({
@@ -41,7 +47,6 @@ function UserProfileEdit() {
       instagramUrl, twitterUrl
     });
     const response = await fetch(API_BASE_URL + "/api/user/updateProfileData", requestOptions);
-    console.log(response.status);
   }
 
   return (
