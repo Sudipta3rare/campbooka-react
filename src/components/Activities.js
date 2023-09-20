@@ -13,7 +13,7 @@ function Activities(props) {
     
     useEffect(() => {
         async function getDataFromBackend() {
-            const response = await fetch(API_BASE_URL + "/api/getActivitiesByPlace/" + props.placeId, requestOptions);
+            const response = await fetch(API_BASE_URL + "/api/public/getActivitiesByPlace/" + props.placeId, requestOptions);
             const responseData = await response.json();
             setActivityList(responseData);
         }

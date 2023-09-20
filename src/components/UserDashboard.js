@@ -5,14 +5,21 @@ import CampBodyRight from './CampBodyRight';
 import { useLocation } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { API_BASE_URL } from '../configuration/Constants';
+import useAuth from '../hooks/useAuth';
 
 function UserDashboard() {
     const location = useLocation();
     const [data, setData] = useState(null);
+    const { auth } = useAuth();
+
+    const headers = new Headers();
+
+    headers.append("Content-Type", "application/json");
+    headers.append("Authorization", "Bearer "  + auth?.jwtToken);
 
     const requestOptions = {
         method: "POST", 
-        headers: { "Content-Type": "application/json"},
+        headers: headers,
         body: null
     };
 

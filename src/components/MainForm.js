@@ -6,8 +6,13 @@ import { API_BASE_URL } from '../configuration/Constants';
 import { useNavigate } from 'react-router-dom';
 
 function MainForm() {
+
+    const headers = new Headers();
+
+    headers.append("Content-Type", "application/json");
+
     const requestOptions = {
-        method: "GET", headers: { "Content-Type": "application/json"}
+        method: "GET", headers: headers
     };    
 
     const [adultCount, setAdultCount] = useState(1);
@@ -20,7 +25,7 @@ function MainForm() {
 
     const handleSearchChange = async (value) => {
         if(value) {
-            const response = await fetch(API_BASE_URL + "/api/searchLocation/" + value, requestOptions);
+            const response = await fetch(API_BASE_URL + "/api/public/searchLocation/" + value, requestOptions);
             const responseData = await response.json();
             setData(responseData);
         }

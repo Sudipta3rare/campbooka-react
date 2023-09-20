@@ -7,10 +7,14 @@ function BookingHistory() {
 
     const[data, setData] = useState([]);
     const { auth } = useAuth();
+    const headers = new Headers();
+
+    headers.append("Content-Type", "application/json");
+    headers.append("Authorization", "Bearer " + auth?.jwtToken);
 
     const requestOptions = {
         method: "POST", 
-        headers: { "Content-Type": "application/json" },
+        headers: headers,
         body: null
     };
 

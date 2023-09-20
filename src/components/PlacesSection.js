@@ -4,11 +4,14 @@ import PlaceCard from "./PlaceCard";
 
 function PlacesSection(props) {
 
+    const headers = new Headers();
+    headers.append("Content-Type", "application/json");
+
     const [data, setData] = useState([]);
 
     const requestOptions = {
         method: "POST", 
-        headers: { "Content-Type": "application/json"}, 
+        headers: headers, 
         body: JSON.stringify({
             placeId : props.guestDetails.id,
             fromDate : props.guestDetails.dtRange[0],
@@ -20,7 +23,7 @@ function PlacesSection(props) {
 
     useEffect(() => {
         async function getDataFromBackend() {
-            const response = await fetch(API_BASE_URL + '/api/getPlaceByLocation', requestOptions);
+            const response = await fetch(API_BASE_URL + '/api/public/getPlaceByLocation', requestOptions);
             const responseData = await response.json();
             setData(responseData); 
         }
