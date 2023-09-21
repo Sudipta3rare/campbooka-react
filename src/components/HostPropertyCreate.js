@@ -8,9 +8,8 @@ function HostPropertyCreate(){
                 <Navbar/>
                 <section>
                     <div className="property">
-                        <div className="container-fluid">
-                            <div className="row">
-                                <HostPropertyCreateLeft/>
+                        <div className="container">
+                            <div className="row justify-content-center">
                                 <HostPropertyCreateRight/>
                              </div>
                         </div>

@@ -11,8 +11,8 @@ function Checkout2Page() {
         <>
             <CheckoutNavbar />
             <section className="knows">
-                <div class="container">
-                    <div class="row">
+                <div className="container">
+                    <div className="row">
                         <CheckoutReviewAndPageSection />
                         <CheckoutFinalBookingPriceSection price={price}/>
                     </div>
