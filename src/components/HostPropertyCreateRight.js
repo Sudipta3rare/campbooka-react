@@ -77,6 +77,9 @@ function HostPropertyCreateRight() {
                         <p>Does your property have a website</p>
                         <input className="ph1" type="text" placeholder="www." />
                     </div>
+                    <div className='submit-button'>
+                        <a href="">Submit</a>
+                    </div>
                 </div>
             </div>
         </div>
