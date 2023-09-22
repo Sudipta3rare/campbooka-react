@@ -1,17 +1,18 @@
-.right-side .admin-tabs .my-btn{
-  background-color: #4CAF50; 
-  border: none;
-  color: white;
-  padding: 8px 17px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  border-radius: 16px;
-  cursor: pointer;
+.right-side .admin-tabs .my-btn {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 8px 17px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 16px;
+    cursor: pointer;
 }
-.right-side .admin-tabs .my-btn5{
-    background-color: #4CAF50; 
+
+.right-side .admin-tabs .my-btn5 {
+    background-color: #4CAF50;
     border: none;
     color: white;
     padding: 8px 17px;
@@ -21,19 +22,19 @@
     font-size: 16px;
     border-radius: 16px;
     margin-left: 46px;
-  }
+}
 
-  .overview-tabs .des-wrap .form-control1{
+.overview-tabs .des-wrap .form-control1 {
     padding-left: 8px;
     height: 120px;
     width: 100%;
     border-radius: 4px;
     border: 1px solid #00000061;
     display: block;
-  }
+}
 
-  .right-side .location .my-btn{
-    background-color: #4CAF50; 
+.right-side .location .my-btn {
+    background-color: #4CAF50;
     border: none;
     color: white;
     padding: 8px 7px;
@@ -42,10 +43,10 @@
     display: inline-block;
     font-size: 16px;
     border-radius: 16px;
-  }
+}
 
-  .right-side .rules .my-btn{
-    background-color: #4CAF50; 
+.right-side .rules .my-btn {
+    background-color: #4CAF50;
     border: none;
     color: white;
     padding: 8px 7px;
@@ -54,77 +55,70 @@
     display: inline-block;
     font-size: 16px;
     border-radius: 16px;
-  }
+}
 
-  .right-side{
+.right-side {
     padding: 30px 0;
-  }
-  /* .right-side .overview-tabs h4{
-    font-weight: 600;
-  } */
-
-  .right-side .overview-tabs .des-wrap{
-       padding: 20px 0;
-  }
-
-  /* .right-side .admin-tabs h4{
-    font-weight: 600;
-  } */
-
-  .right-side .overview-tabs .des-wrap{
-    padding: 0;
 }
 
-.right-side .overview-tabs .acres{
-    padding: 0;
-}
-
-/* .right-side .admin-tabs{
-    padding: 50px 0 !important;
-} */
-
-.right-side .admin-tabs .id-link{
-    padding: 50px 0 ;
-}
-
-.verify{
+.right-side .overview-tabs .des-wrap {
     padding: 20px 0;
 }
 
-.rules{
+.right-side .overview-tabs .des-wrap {
+    padding: 0;
+}
+
+.right-side .overview-tabs .acres {
+    padding: 0;
+}
+
+.right-side .admin-tabs .id-link {
+    padding: 50px 0;
+}
+
+.verify {
     padding: 20px 0;
 }
-.overview-tabs .name, .overview-tabs .acres, .overview-tabs .website-wrap{
-    padding-top: 10px!important;
+
+.rules {
+    padding: 20px 0;
 }
 
+.overview-tabs .name,
+.overview-tabs .acres,
+.overview-tabs .website-wrap {
+    padding-top: 10px !important;
+}
 
-.overview-tabs h4{
+.overview-tabs h4 {
     font-size: 18px;
     line-height: 40px;
     color: #fff;
     font-weight: 100;
 }
-.overview-tabs p{
+
+.overview-tabs p {
     color: #fff;
 }
+
 .overview-tabs {
-    border: 0!important;
-    box-shadow: none!important;
+
+    border: 0 !important;
+    box-shadow: none !important;
     text-align: left;
     background: #433756;
     padding: 30px;
 }
 
-
-.cont .cont-wrap{
-    background:#dcd4ed;
+.cont .cont-wrap {
+    background: #dcd4ed;
     padding: 5px;
     position: relative;
-    box-shadow:6px 7px 12px 4px #433756eb;
+    box-shadow: 6px 7px 12px 4px #433756eb;
 }
 
-.cont .cont-wrap::after{
+.cont .cont-wrap::after {
     position: absolute;
     clear: both;
     content: '';
@@ -137,19 +131,17 @@
 }
 
 .cont .contact-details {
-  position: relative;
-  z-index: 9;
+    position: relative;
+    z-index: 9;
 }
 
-
-.right-side .ph1{
+.right-side .ph1 {
     border-radius: 25px;
     width: 21%;
     height: 47px;
 }
 
-
-.file-upload1{
+.file-upload1 {
     width: 21%;
     height: 47px;
 }
@@ -158,8 +150,7 @@ html {
     scroll-behavior: smooth;
 }
 
-
-.right-side .overview-tabs .ph1{
+.right-side .overview-tabs .ph1 {
     padding-left: 8px;
     height: 40px;
     width: 100%;
@@ -168,93 +159,76 @@ html {
     display: block;
 }
 
-
-
-/* ..........................
-
-...........................*/
-
-
-.admin-tabs{
-    border: 0 !important;;
-    padding: 0px!important;
+.admin-tabs {
+    border: 0 !important;
+    ;
+    padding: 0px !important;
     margin: 20px 0;
-    box-shadow:none!important;
+    box-shadow: none !important;
     text-align: left;
 }
 
-.admin-tabs h4{
+.admin-tabs h4 {
     font-size: 30px;
 
-   
+
 }
 
-.location-tabs{
+.location-tabs {
     border: 1px solid #000;
-    padding: 20px!important;
+    padding: 20px !important;
     margin: 20px 0;
     box-shadow: -3px 3px 13px 0px #2b3250e3;
-   
+
 }
 
-.location-tabs h4{
+.location-tabs h4 {
     font-size: 30px;
-    
- 
+
+
 }
 
-.rules-tabs{
+.rules-tabs {
     border: 1px solid #000;
-    padding: 20px!important;
+    padding: 20px !important;
     margin: 20px 0;
     box-shadow: -3px 3px 13px 0px #2b3250e3;
 }
 
-.rules-tabs h4{
+.rules-tabs h4 {
     font-size: 30px;
-    
 }
 
-.overview{
-    
-    padding: 20px!important;
+.overview {
+    padding: 20px !important;
     margin: 20px 0;
     background: #2c324ea8;
 }
 
-.admin{
-    
-    padding: 20px!important;
+.admin {
+
+    padding: 20px !important;
     margin: 20px 0;
     background: #2c324ea8;
 }
 
-.location{
-   
-    padding: 20px!important;
+.location {
+
+    padding: 20px !important;
     margin: 20px 0;
     background: #2c324ea8;
 }
 
-.rules{
-    
-    padding: 20px!important;
+.rules {
+
+    padding: 20px !important;
     margin: 20px 0;
     background: #2c324ea8;
 }
 
-
-.modal-body-2 span{
-  display: grid;
+.modal-body-2 span {
+    display: grid;
 }
-
-
-
-
-
-
-
-
 
 .profile_pic {
     width: 200px;
@@ -277,8 +251,6 @@ html {
     position: relative;
 
 }
-
-
 
 .p-image {
     position: absolute;
@@ -303,11 +275,8 @@ html {
     color: #999;
 }
 
-.submit-button{
+.submit-button {
     text-align: center;
-}
-.submit-button a
-{
     text-decoration: none;
     color: #fff;
     background: #f10;
