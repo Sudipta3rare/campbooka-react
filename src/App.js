@@ -13,6 +13,7 @@ import UserDashboard from './components/UserDashboard';
 import RequireAuth from './components/RequireAuth';
 import HostDashboard from './components/HostDashboard';
 import UserEditProfile from './components/UserEditProfile';
+import HostPropertyCreate from './components/HostPropertyCreate';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path='camperbook' element={<Camperbook/>}/>
         <Route path='checkoutrule' element={<Checkout />} />
         <Route path='checkout2' element={<Checkout2Page/>} />
+        <Route path='createprop' element={<HostPropertyCreate/>}/>
 
         <Route element={<RequireAuth />}>
           <Route path='userdashboard' element={<UserDashboard />} />

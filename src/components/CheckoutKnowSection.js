@@ -1,7 +1,7 @@
 function CheckoutKnowSection() {
     return (
-        <div class="col-md-8">
-            <div class="know-inner">
+        <div className="col-md-8">
+            <div className="know-inner">
                 <h2>Know before you go</h2>
                 <h5>Policies</h5>
                 <ul>
@@ -16,40 +16,40 @@ function CheckoutKnowSection() {
                 </ul>
                 <h5>Amenities</h5>
                 <ul>
-                    <li class="amenities-li">
-                        <i class="fa fa-wifi" aria-hidden="true"></i>
+                    <li className="amenities-li">
+                        <i className="fa fa-wifi" aria-hidden="true"></i>
                         <p>
                             Campfires allowed
-                            <span class="d-block">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </span>
+                            <span className="d-block">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </span>
                         </p>
                     </li>
-                    <li class="amenities-li">
-                        <i class="fa fa-wifi" aria-hidden="true"></i>
+                    <li className="amenities-li">
+                        <i className="fa fa-wifi" aria-hidden="true"></i>
                         <p>
                             Toilet available
-                            <span class="d-block">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </span>
+                            <span className="d-block">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </span>
                         </p>
                     </li>
-                    <li class="amenities-li">
-                        <i class="fa fa-wifi" aria-hidden="true"></i>
+                    <li className="amenities-li">
+                        <i className="fa fa-wifi" aria-hidden="true"></i>
                         <p>
                             Pets allowed
-                            <span class="d-block">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </span>
+                            <span className="d-block">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </span>
                         </p>
                     </li>
-                    <li class="amenities-li">
-                        <i class="fa fa-wifi" aria-hidden="true"></i>
+                    <li className="amenities-li">
+                        <i className="fa fa-wifi" aria-hidden="true"></i>
                         <p>
                             Potable water available
-                            <span class="d-block">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </span>
+                            <span className="d-block">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </span>
                         </p>
                     </li>
 
-                    <li class="amenities-li">
-                        <i class="fa fa-wifi" aria-hidden="true"></i>
+                    <li className="amenities-li">
+                        <i className="fa fa-wifi" aria-hidden="true"></i>
                         <p>
                             Potable water available
-                            <span class="d-block">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </span>
+                            <span className="d-block">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </span>
                         </p>
                     </li>
                 </ul>

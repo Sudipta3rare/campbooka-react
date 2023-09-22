@@ -11,8 +11,8 @@ function Checkout() {
         <>
             <CheckoutNavbar />
             <section className='knows'>
-                <div class="container">
-                    <div class="row">
+                <div className="container">
+                    <div className="row">
                         <CheckoutKnowSection />
                         <CheckoutBookingPriceSection price={price} />
                     </div>
